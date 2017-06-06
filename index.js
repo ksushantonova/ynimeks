@@ -170,15 +170,16 @@ var m3v1;
 var m3v2;
 var m7v1;
 var m7v2;
+var m9v;
 
 function razmerVytach(){
 	// расчет m5, m3
-	
+
 	if (m5 > (1.25 * N)){
 		m5v = 1.25 * N;
 		var ost1 = m5 - m5v;
 		if(ost1 < k){
-			m7v1 = ost1;
+			m7v1 = +ost1;
 			m3v1 = m3/2;
 			m3v2 = m3/2;
 		} else {
@@ -191,11 +192,28 @@ function razmerVytach(){
 		m5v = m5;
 		m3v1 = m3/2;
 		m3v2 = m3/2;
+		m7v1 = 0;
+	}
+
+	if (m7 > N){
+		m7v2 = N;
+		var ost1 = m7 - m7v2;
+		if (ost1 < k){
+			m7v1 = +m7v1 + +ost1;
+			m9v = 0;
+		} else {
+			m7v1 = +m7v1 + k;
+			m9v = ost1 - k;
+		}
+	} else {
+		m7v2 = m7;
+		m7v1 = m7v1;
+		m9v = 0;
 	}
 
    // расчет m7
 
-	console.log("m5v = " + m5v + ", m3v1 = " + m3v1 + ", m3v2 = " + m3v2)
+	console.log("m5v = " + m5v + ", m3v1 = " + m3v1 + ", m3v2 = " + m3v2 + ", m7v1 = " + m7v1 + ", m7v2 = " + m7v2 + ", m9v = " + m9v);
 }
 
 /* Скрипт */
