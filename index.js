@@ -143,6 +143,30 @@ function getHips(){
 	};
 };
 
+var bal;
+
+function getBal(){
+	var b = document.getElementsByName("bal");
+	for (var i = 0; i < b.length; i++){
+		if (b[i].checked){
+			bal = +b[i].value;
+			return bal;
+		};
+	};
+};
+
+var ass;
+
+function getAss(){
+	var a = document.getElementsByName("ass");
+	for (var i = 0; i < a.length; i++){
+		if (a[i].checked){
+			ass = +a[i].value;
+			return ass;
+		};
+	};
+};
+
 
 							// вытачки низа расчет 
 
@@ -215,7 +239,7 @@ var oss2 = 0;
  	m3v1 = (m3 + oss2)/2;
  	m3v2 = (m3 + oss2)/2;
  } else {
- 	m3v1 = m3;
+ 	m3v1 = m3 + oss2;
  	m3v2 = 0;
  }
 
@@ -278,7 +302,11 @@ if (f9 > 0){
 	document.getElementById("f9").innerHTML = Math.floor((f9)*100)/100;
 }
 	
-	
+document.getElementById("hp1").innerHTML = Math.floor((getBal() * N)* 100)/100;
+	document.getElementById("hp2").innerHTML = Math.floor((getBal() * N)* 100)/100;
+	document.getElementById("hp5").innerHTML = Math.floor((getHips() * N)* 100)/100;
+	document.getElementById("hz1").innerHTML = Math.floor((getAss() * N)* 100)/100;
+	document.getElementById("hz2").innerHTML = Math.floor((getAss() * N)* 100)/100;	
 	
 
 
@@ -288,8 +316,12 @@ function main(){
 getData();
 getFigure();
 	console.log(getFigure());
-	getHips();
+	getBal();
 	console.log(getHips());
+	getBal();
+	console.log(getBal());
+	getAss();
+	console.log(getAss());
 	basic();
 	verifyAll();
     square()
@@ -298,4 +330,4 @@ getFigure();
      setValueVytochki();
 };
 
-
+//сделала полность вытачки. пора делать остальное

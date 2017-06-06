@@ -17,6 +17,22 @@
 #gHips p{
 	width: 300px;
 }
+#gBalley {
+	position: relative;
+	display: inline-block;
+	width: 130px;
+}
+#gBalley p{
+	width: 300px;
+}
+#gAss {
+	position: relative;
+	display: inline-block;
+	width: 130px;
+}
+#gAss p{
+	width: 300px;
+}
 
 #vytochki {
 	position: relative;
@@ -114,7 +130,7 @@
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 38vw;
-	left: 56.3vw;
+	left: 56vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -161,5 +177,63 @@
 	margin: 0 0 0 0;
 	
 }
+#hp1{
+	transform: rotate(270deg);
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 32vw;
+	left: 20.3vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#hp2{
+	transform: rotate(270deg);
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 32vw;
+	left: 8.3vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#hp5{
+	transform: rotate(270deg);
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 32vw;
+	left: 32vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#hz1{
+	transform: rotate(270deg);
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 32vw;
+	left: 45.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+#hz2{
+	transform: rotate(270deg);
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 32vw;
+	left: 55.8vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+
 
 
