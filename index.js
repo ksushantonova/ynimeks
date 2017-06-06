@@ -237,6 +237,26 @@ function setValueVytochki(){
 	document.getElementById("m7v2").innerHTML = Math.floor((m7v2)*100)/100;
 	document.getElementById("m9v").innerHTML = Math.floor((m9v)*100)/100;
 
+if (f1 > 0){
+	document.getElementById("f1").innerHTML = "+" + Math.floor((f1)*100)/100;
+} else {
+	document.getElementById("f1").innerHTML = Math.floor((f1)*100)/100;
+}
+
+if (f5 > 0){
+	document.getElementById("f5").innerHTML = "+" + Math.floor((f5)*100)/100;
+} else {
+	document.getElementById("f5").innerHTML = Math.floor((f5)*100)/100;
+}
+if (f9 > 0){
+	document.getElementById("f9").innerHTML = "+" + Math.floor((f9)*100)/100;
+} else {
+	document.getElementById("f9").innerHTML = Math.floor((f9)*100)/100;
+}
+	
+	
+	
+
 
 }
 
