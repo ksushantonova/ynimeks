@@ -66,6 +66,8 @@ f9 = (m7 - N) / 2;
 
 ns = (N + Np) / 2;
 
+
+
 console.log("N = " + N +", k = "+ k + ", ev = "+ ev + ", otr = " + otr + ", f1 = " + f1 + ", f5 = " + f5 + ", f9 = " + f9 + ", ns = "+ ns)
 
 };
@@ -195,6 +197,9 @@ function razmerVytach(){
 		m7v1 = 0;
 	}
 
+
+// расчет m7
+
 	if (m7 > N){
 		m7v2 = N;
 		var ost1 = m7 - m7v2;
@@ -210,8 +215,7 @@ function razmerVytach(){
 		m7v1 = m7v1;
 		m9v = 0;
 	}
-
-   // расчет m7
+ 
 
 	console.log("m5v = " + m5v + ", m3v1 = " + m3v1 + ", m3v2 = " + m3v2 + ", m7v1 = " + m7v1 + ", m7v2 = " + m7v2 + ", m9v = " + m9v);
 }
@@ -221,7 +225,20 @@ function razmerVytach(){
 var btn = document.getElementById("get");
 btn.onclick = main;
 
+function setValueVytochki(){
+	document.getElementById("v1p").innerHTML = Math.floor((v1p)*100)/100;
+	document.getElementById("v2p").innerHTML = Math.floor((v1p)*100)/100;
+	document.getElementById("v1z").innerHTML = Math.floor((v1z)*100)/100;
+	document.getElementById("v2z").innerHTML = Math.floor((v1z)*100)/100;
+	document.getElementById("m5v").innerHTML = Math.floor((m5v)*100)/100;
+	document.getElementById("m3v1").innerHTML = Math.floor((m3v1)*100)/100;
+	document.getElementById("m3v2").innerHTML = Math.floor((m3v2)*100)/100;
+	document.getElementById("m7v1").innerHTML = Math.floor((m7v1)*100)/100;
+	document.getElementById("m7v2").innerHTML = Math.floor((m7v2)*100)/100;
+	document.getElementById("m9v").innerHTML = Math.floor((m9v)*100)/100;
 
+
+}
 
 function main(){
 getData();
@@ -231,6 +248,7 @@ getData();
     square()
     vytachkiCount();
      razmerVytach();
+     setValueVytochki();
 };
 
 

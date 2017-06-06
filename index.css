@@ -1,5 +1,113 @@
-img{
+#vytochki {
+	position: relative;
 	width: 70%;
-	height: auto;
-	margin-left: 15%;
+	height: 50%;
+	left: 15%;
 }
+#v1p{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 27vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#v2p{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 15vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	}
+
+	#v1z{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 39.7vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+	#v2z{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+	#m5v{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 38vw;
+	left: 33vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+
+}
+	#m3v1{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 38vw;
+	left: 20.7vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+	#m3v2{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 38vw;
+	left: 9vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+	#m7v1{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 38vw;
+	left: 45.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+	#m7v2{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 38vw;
+	left: 56vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+	#m9v{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 38vw;
+	left: 65vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
