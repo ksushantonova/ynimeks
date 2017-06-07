@@ -1,3 +1,5 @@
+
+
 #variables{
 	display: inline-block;
 	margin-bottom: 50px;
@@ -34,11 +36,17 @@
 	width: 300px;
 }
 
+								/* вытачки */
+
 #vytochki {
 	position: relative;
 	width: 70%;
 	height: 50%;
 	left: 15%;
+
+}
+#vytochkii{
+	margin: 70px 0 50px 0;
 }
 #v1p{
 	text-align: center;
@@ -234,6 +242,155 @@
 	
 }
 
+							/* Штаны передняя и задняя */
 
+#shtany1 {
+	position: relative;
+	width: 45%;
+	display: inline-block;
+}
+#p {
+		margin:50px 0 50px 20px;
+}
+#z{
+		margin:50px 0 51px 35px;
 
+}
+#shtany2 {
+	position: relative;
+	display: inline-block;
+	width: 49%;
 
+}
+
+.black {
+	width: 100%;
+	height: 3px;
+	background: black;
+}
+
+									/* передняя */
+
+#vep{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 80vw;
+	left: 25vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#vsp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 70vw;
+	left: 28vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+	
+}
+#vdp1{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 59.3vw;
+	left: 20vw;
+	width: 40px;
+	margin: 0 0 0 0;
+	
+}
+
+#nop{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 57.5vw;
+	left: 2vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#vnp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 62vw;
+	left: 4.8vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+	
+}
+#kp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.2vw;
+	bottom: 59vw;
+	left: 3vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#tnp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#tkp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#evp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#kpn{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#ppp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#vpp{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 12.5vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}

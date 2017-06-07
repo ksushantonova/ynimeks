@@ -301,7 +301,11 @@ if (f9 > 0){
 } else {
 	document.getElementById("f9").innerHTML = Math.floor((f9)*100)/100;
 }
-	
+
+
+	// переделать под таблицу нормы роста
+
+
 document.getElementById("hp1").innerHTML = Math.floor((getBal() * N)* 100)/100;
 	document.getElementById("hp2").innerHTML = Math.floor((getBal() * N)* 100)/100;
 	document.getElementById("hp5").innerHTML = Math.floor((getHips() * N)* 100)/100;
