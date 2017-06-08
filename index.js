@@ -4,11 +4,8 @@
 var ot = document.getElementById("Ot"),
  ob = document.getElementById("Ob"),
  m3 = document.getElementById("m3"),
- h3 = document.getElementById("h3"),
  m5 = document.getElementById("m5"),
- h5 = document.getElementById("h5"),
  m7 = document.getElementById("m7"),
- h7 = document.getElementById("h7"),
  p =  document.getElementById("P"),
  tn = document.getElementById("TN"),
  vs = document.getElementById("TY"),
@@ -17,33 +14,84 @@ var ot = document.getElementById("Ot"),
 
 /* Функции */
 
-function getData(){
- return {
-  ot: +ot.value,
-  ob: +ob.value,
-  m3: +m3.value,
-  h3: +h3.value,
-  m5: +m5.value,
-  h5: +h5.value,
-  m7: +m7.value,
-  h7: +h7.value,
-  tn: +tn.value,
-  p:  +p.value,
-  vs: +vs.value,
-  tk: +tk.value
+//пофиксить баг с дефолт-датой
+var data;
+
+
+var Np; 
+
+function getNp(){
+ if (data.p >= 50 && data.p < 70){
+ 	Np = 2.5;
+ } else if (data.p >= 70 && data.p < 90){
+ 	Np = 2.7;
+ } else if (data.p >= 90 && data.p < 100){
+ 	Np = 3.0;
+ } else if (data.p >= 100 && data.p < 110){
+ 	Np = 3.2;
+ } else if (data.p >= 110 && data.p < 120){
+ 	Np = 3.3;
+ } else if (data.p >= 120 && data.p < 130){
+ 	Np = 3.5;
+ } else if (data.p >= 130 && data.p < 135){
+ 	Np = 3.7;
+ } else if (data.p >= 135 && data.p < 138){
+ 	Np = 3.9;
+ } else if (data.p >= 138 && data.p < 139){
+ 	Np = 3.9;
+ } else if (data.p >= 139 && data.p < 140){
+ 	Np = 3.9;
+ } else if (data.p >= 140 && data.p < 142){
+ 	Np = 4.0;
+ } else if (data.p >= 142 && data.p < 145){
+ 	Np = 4.2;
+ } else if (data.p >= 145 && data.p < 147){
+ 	Np = 4.5;
+ } else if (data.p >= 147 && data.p < 150){
+ 	Np = 4.6;
+ } else if (data.p >= 150 && data.p < 155){
+ 	Np = 4.7;
+ } else if (data.p >= 155 && data.p < 160){
+ 	Np = 4.8;
+ } else if (data.p >= 160 && data.p < 162){
+ 	Np = 4.9;
+ } else if (data.p >= 162 && data.p < 163){
+ 	Np = 5;
+ } else if (data.p >= 163 && data.p < 164){
+ 	Np = 5;
+ } else if (data.p >= 164 && data.p < 167){
+ 	Np = 5.1;
+ } else if (data.p >= 167 && data.p < 170){
+ 	Np = 5.2;
+ } else if (data.p >= 170 && data.p < 173){
+ 	Np = 5.3;
+ } else if (data.p >= 173 && data.p < 175){
+ 	Np = 5.4;
+ } else if (data.p >= 175 && data.p < 177){
+ 	Np = 5.5;
+ } else if (data.p >= 177 && data.p < 178){
+ 	Np = 5.6;
+ } else if (data.p >= 178 && data.p < 180){
+ 	Np = 5.7;
+ } else if (data.p >= 180 && data.p < 185){
+ 	Np = 5.8;
+ } else if (data.p >= 185 && data.p < 190){
+ 	Np = 5.9;
+ } else if (data.p >= 190 && data.p < 195){
+ 	Np = 6;
+ } else if (data.p >= 195 && data.p < 200){
+ 	Np = 6.2;
+ } else if (data.p >= 200 && data.p < 210){
+ 	Np = 6.3;
+ } else if (data.p >= 210 && data.p < 220){
+ 	Np = 6.5;
+ } else if (data.p >= 220){
+ 	Np = 6.8;
  }
+ return Np;
 };
 
-var data = getData();
-
-var Np = function(){
-
-return "aaa"
-
-};
-
-var Nsr = (N + Np) / 2;
-
+var Nsr;
 function basic(){
 
 N = data.ob / 20;
@@ -56,12 +104,26 @@ f5 = (data.m5 - N) / 2;
 f9 = (data.m7 - N) / 2;
 
 ns = (N + Np) / 2;
+Nsr = (N + Np) / 2;
+
 
 
 
 console.log("N = " + N +", k = "+ k + ", ev = "+ ev + ", otr = " + otr + ", f1 = " + f1 + ", f5 = " + f5 + ", f9 = " + f9 + ", ns = "+ ns)
 
 };
+
+function defaultData(){
+	if (data.vs == 0){
+		data.vs = 5 * N;
+	};
+	if (data.tn == 0){
+		data.tn = (8.5 * Np) + (6.5 * Np) + (5 * N);
+	};
+	if (data.tk == 0){
+		data.tk = (6.5 * Np) + (5 * N);
+	};
+}
 
 
 function verifyAll(){
@@ -157,6 +219,7 @@ function getAss(){
 		};
 	};
 };
+	
 
 
 							// вытачки низа расчет 
@@ -165,8 +228,6 @@ var v1p;
 var v2p;
 var v1z;
 var v2z;
-
-
 
 
 
@@ -326,11 +387,11 @@ if (f9 > 0){
 	// переделать под таблицу нормы роста
 
 
-document.getElementById("hp1").innerHTML = Math.floor((getBal() * N)* 100)/100;
-	document.getElementById("hp2").innerHTML = Math.floor((getBal() * N)* 100)/100;
-	document.getElementById("hp5").innerHTML = Math.floor((getHips() * N)* 100)/100;
-	document.getElementById("hz1").innerHTML = Math.floor((getAss() * N)* 100)/100;
-	document.getElementById("hz2").innerHTML = Math.floor((getAss() * N)* 100)/100;	
+document.getElementById("hp1").innerHTML = Math.floor((getBal() * Np)* 100)/100;
+	document.getElementById("hp2").innerHTML = Math.floor((getBal() * Np)* 100)/100;
+	document.getElementById("hp5").innerHTML = Math.floor((getHips() * Np)* 100)/100;
+	document.getElementById("hz1").innerHTML = Math.floor((getAss() * Np)* 100)/100;
+	document.getElementById("hz2").innerHTML = Math.floor((getAss() * Np)* 100)/100;	
 	
 
 
@@ -359,6 +420,19 @@ function setValueShtanyP(){
 						      // финальная функция
 
 function main(){
+data = {
+  ot: +ot.value,
+  ob: +ob.value,
+  m3: +m3.value,
+  m5: +m5.value,
+  m7: +m7.value,
+  p:  +p.value,
+  tn: +tn.value,
+  vs: +vs.value,
+  tk: +tk.value
+
+};
+getNp();
 getFigure();
 	console.log(getFigure());
 	getBal();
@@ -368,14 +442,18 @@ getFigure();
 	getAss();
 	console.log(getAss());
 	basic();
+	defaultData();
 	verifyAll();
-    square()
+    square();
     vytachkiCount();
-     razmerVytach();
-     setValueVytochki();
-      getWidthSh();
-     getShtanyP();
-     setValueShtanyP();
+    razmerVytach();
+    setValueVytochki();
+    getWidthSh();
+    getShtanyP();
+    setValueShtanyP();
+    console.log(data.vs);
+    console.log(data.tn);
+    console.log(Np);
 
 };
 
