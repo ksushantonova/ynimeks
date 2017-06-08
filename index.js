@@ -347,6 +347,27 @@ function getShtanyP(){
    nppp = nvpp = res;
 }
 
+var vez,vsz,vdz1,noz,vnz,kz,kv,tnz,tkz,evz,kzs,kzn,ppz,vpz,nppz,nvpz,tknz;
+
+function getShtanyZ(){
+	vez = (5 * N) + (k/2);
+	vsz = data.vs;
+	vdz1 =  ((vep) + N) /2;
+	noz = 2 * N;
+	vnz = 1.5 * N;
+	kz = k / 2;
+	kv = square();
+	tnz = data.tn;
+	tkz = data.tk;
+	evz = 3 * Np;
+	kzs = k / 2;
+	kzn = k;
+	ppz = vpz = res + (N / 2);
+	nppz = nvpz =  res + (N / 2);
+	tknz = data.tn - data.tk;
+
+}
+
 
 
 /* Скрипт */
@@ -397,7 +418,7 @@ document.getElementById("hp1").innerHTML = Math.floor((getBal() * Np)* 100)/100;
 
 }
 
-function setValueShtanyP(){
+function setValueShtany(){
 	document.getElementById("vep").innerHTML = Math.floor((vep)*100)/100;
 	document.getElementById("vsp").innerHTML = Math.floor((vsp)*100)/100;
 	document.getElementById("vdp1").innerHTML = "1/2(" + Math.floor((vdp1)*100)/100 + ")";
@@ -414,10 +435,27 @@ function setValueShtanyP(){
 	document.getElementById("nvpp").innerHTML = Math.floor((vpp)*100)/100;
 	document.getElementById("tkn").innerHTML = Math.floor((tkn)*100)/100;
 
-}
+    document.getElementById("vez").innerHTML = Math.floor((vez)*100)/100;
+	document.getElementById("vsz").innerHTML = Math.floor((vsz)*100)/100;
+	document.getElementById("vdz1").innerHTML = "1/2(" + Math.floor((vdz1)*100)/100 + ")";
+	document.getElementById("noz").innerHTML = Math.floor((noz)*100)/100;
+	document.getElementById("vnz").innerHTML = Math.floor((vnz)*100)/100;
+	document.getElementById("kz").innerHTML = Math.floor((kz)*100)/100;
+	document.getElementById("kv").innerHTML = Math.floor((kv)*100)/100;
+	document.getElementById("tnz").innerHTML = Math.floor((tnz)*100)/100;
+	document.getElementById("tkz").innerHTML = Math.floor((tkz)*100)/100;
+	document.getElementById("evz").innerHTML = Math.floor((evz)*100)/100;
+	document.getElementById("kzs").innerHTML = Math.floor((kzs)*100)/100;
+	document.getElementById("kzn").innerHTML = Math.floor((kzn)*100)/100;
+	document.getElementById("ppz").innerHTML = Math.floor((ppz)*100)/100;
+	document.getElementById("vpz").innerHTML = Math.floor((vpz)*100)/100;
+	document.getElementById("nppz").innerHTML = Math.floor((nppz)*100)/100;
+	document.getElementById("nvpz").innerHTML = Math.floor((nvpz)*100)/100;
+	document.getElementById("tknz").innerHTML = Math.floor((tknz)*100)/100;
 
+};
 
-						      // финальная функция
+							      // финальная функция
 
 function main(){
 data = {
@@ -450,7 +488,8 @@ getFigure();
     setValueVytochki();
     getWidthSh();
     getShtanyP();
-    setValueShtanyP();
+    getShtanyZ();
+    setValueShtany();
     console.log(data.vs);
     console.log(data.tn);
     console.log(Np);
