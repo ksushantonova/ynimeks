@@ -296,6 +296,8 @@ var oss2 = 0;
  }
 
 
+
+
 var oss3 = 0;
 
 // расчет m7
@@ -351,7 +353,7 @@ var vez,vsz,vdz1,noz,vnz,kz,kv,tnz,tkz,evz,kzs,kzn,ppz,vpz,nppz,nvpz,tknz;
 
 function getShtanyZ(){
 	vez = (5 * N) + (k/2);
-	vsz = data.vs;
+	vsz = data.vs - (1.5 * N);
 	vdz1 =  ((vep) + N) /2;
 	noz = 2 * N;
 	vnz = 1.5 * N;
@@ -407,9 +409,12 @@ if (f9 > 0){
 
 	// переделать под таблицу нормы роста
 
+if(m3v2 == 0){
+	document.getElementById("hp2").innerHTML = "0";
+} else {
+document.getElementById("hp2").innerHTML = Math.floor((getBal() * Np)* 100)/100; }
 
-document.getElementById("hp1").innerHTML = Math.floor((getBal() * Np)* 100)/100;
-	document.getElementById("hp2").innerHTML = Math.floor((getBal() * Np)* 100)/100;
+	document.getElementById("hp1").innerHTML = Math.floor((getBal() * Np)* 100)/100;
 	document.getElementById("hp5").innerHTML = Math.floor((getHips() * Np)* 100)/100;
 	document.getElementById("hz1").innerHTML = Math.floor((getAss() * Np)* 100)/100;
 	document.getElementById("hz2").innerHTML = Math.floor((getAss() * Np)* 100)/100;	
@@ -443,7 +448,7 @@ function setValueShtany(){
 	document.getElementById("kz").innerHTML = Math.floor((kz)*100)/100;
 	document.getElementById("kv").innerHTML = Math.floor((kv)*100)/100;
 	document.getElementById("tnz").innerHTML = Math.floor((tnz)*100)/100;
-	document.getElementById("tkz").innerHTML = Math.floor((tkz)*100)/100;
+	document.getElementById("tkz").innerHTML = Math.floor((tknz)*100)/100;
 	document.getElementById("evz").innerHTML = Math.floor((evz)*100)/100;
 	document.getElementById("kzs").innerHTML = Math.floor((kzs)*100)/100;
 	document.getElementById("kzn").innerHTML = Math.floor((kzn)*100)/100;
@@ -451,7 +456,7 @@ function setValueShtany(){
 	document.getElementById("vpz").innerHTML = Math.floor((vpz)*100)/100;
 	document.getElementById("nppz").innerHTML = Math.floor((nppz)*100)/100;
 	document.getElementById("nvpz").innerHTML = Math.floor((nvpz)*100)/100;
-	document.getElementById("tknz").innerHTML = Math.floor((tknz)*100)/100;
+	document.getElementById("tknz").innerHTML = Math.floor((tkz)*100)/100;
 
 };
 
