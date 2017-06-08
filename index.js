@@ -115,7 +115,7 @@ console.log("N = " + N +", k = "+ k + ", ev = "+ ev + ", otr = " + otr + ", f1 =
 
 function defaultData(){
 	if (data.vs == 0){
-		data.vs = 5 * N;
+		data.vs = (5 * Np) + 1;
 	};
 	if (data.tn == 0){
 		data.tn = (8.5 * Np) + (6.5 * Np) + (5 * N);
@@ -340,7 +340,7 @@ function getShtanyP(){
   kp = k;
   tnp = data.tn;
   tkp = data.tk;
-  evp = 3 * N;
+  evp = 3 * Np;
   kpn = k/4;
   tkn = data.tn - data.tk; 
    ppp = vpp = res;

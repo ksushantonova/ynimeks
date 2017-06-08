@@ -270,7 +270,6 @@
 }
 
 									/* передняя */
-
 #vep{
 	text-align: center;
 	position: absolute;
@@ -280,8 +279,7 @@
 	width: 30px;
 	margin: 0 0 0 0;
 	
-}
-#vsp{
+}#vsp{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
@@ -291,8 +289,7 @@
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
 	
-}
-#vdp1{
+}#vdp1{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
@@ -302,7 +299,6 @@
 	margin: 0 0 0 0;
 	
 }
-
 #nop{
 	text-align: center;
 	position: absolute;
@@ -312,8 +308,7 @@
 	width: 30px;
 	margin: 0 0 0 0;
 	
-}
-#vnp{
+}#vnp{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
@@ -323,8 +318,7 @@
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
 	
-}
-#kp{
+}#kp{
 	text-align: center;
 	position: absolute;
 	font-size: 1.2vw;
@@ -333,8 +327,7 @@
 	width: 30px;
 	margin: 0 0 0 0;
 	
-}
-#tnp{
+}#tnp{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
@@ -361,7 +354,7 @@
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 55.7vw;
-    left: 15.4vw;
+    left: 13.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -369,12 +362,12 @@
 }
 #kpn{
 	text-align: center;
-	position: absolute;
-	font-size: 0.8vw;
+  	position: absolute;
+    font-size: 0.8vw;
     bottom: 52.2vw;
     left: 3vw;
-	width: 30px;
-	margin: 0 0 0 0;
+  	width: 30px;
+  	margin: 0 0 0 0;
 
 	
 }
@@ -422,12 +415,217 @@
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 18vw;
+	bottom: 18.8vw;
 	left: 43vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
 }
+
+							/* задняя */
+#vez{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 87.5vw;
+    left: 27.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(367deg);
+}
+
+#vsz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 78vw;
+    left: 34vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+}
+
+#vdz1{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 60.5vw;
+    left: 28vw;
+	width: 30px;
+	margin: 0 0 0 0;
+}
+
+#vnz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.3vw;
+    bottom: 68vw;
+    left: 13vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+}
+
+#noz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 59.2vw;
+    left: 7.8vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#kz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.2vw;
+	bottom: 61vw;
+    left: 2.3vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+	
+}
+#kv{
+	text-align: center;
+	position: absolute;
+	font-size: 1.2vw;
+	bottom: 63.5vw;
+    left: 11vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+
+#tnz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 46.8vw;
+	left: 51.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+}
+
+#tkz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 18.8vw;
+	left: 49.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+}
+
+#evz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 56vw;
+    left: 20vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+}
+
+#kzs{
+	text-align: center;
+	position: absolute;
+	font-size: 1vw;
+	bottom: 52vw;
+    left: 6vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#kzn{
+	text-align: center;
+	position: absolute;
+	font-size: 1.1vw;
+    bottom: 34.4vw;
+    left: 11.2vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	
+}
+#vpz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 34.4vw;
+	left: 16.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+}
+#ppz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 34.4vw;
+	left: 26vw;
+	width: 30px;
+	margin: 0 0 0 0;
+}
+#nppz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 4.5vw;
+	left: 16.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+}
+#nvpz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 4.5vw;
+	left: 26vw;
+	width: 30px;
+	margin: 0 0 0 0;
+}
+
+#tknz{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	bottom: 62vw;
+	left: 49.5vw;
+	width: 30px;
+	margin: 0 0 0 0;
+	transform: rotate(270deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @media only screen and (max-width : 1144px) {
  # {
