@@ -10,7 +10,21 @@ var ot = document.getElementById("Ot"),
  tn = document.getElementById("TN"),
  vs = document.getElementById("TY"),
  tk = document.getElementById("TK"),
- N,k,ev,otr,f1,f5,f9,ns;
+ N,k,ev,otr,f1,f5,f9,ns,
+ p5lp5p = document.getElementById("P5LP5P"),
+ mg = document.getElementById("Mg"),
+ vg = document.getElementById("Vg"),
+ cg = document.getElementById("Cg"),
+ a9t9 =  document.getElementById("A9T9"),
+ a2t2 = document.getElementById("A2T2"),
+ a8t8 = document.getElementById("A8T8"),
+ vb = document.getElementById("Vb"),
+ vp = document.getElementById("P6"),
+ or = document.getElementById("Or"),
+ dl = document.getElementById("Dl"),
+ dr = document.getElementById("Dr");
+
+
 
 /* Функции */
 
@@ -219,7 +233,31 @@ function getAss(){
 		};
 	};
 };
+
+var osanka;
+
+function gSp(){
+	var o = document.getElementsByName("sp");
+	for (var i = 0; i < o.length; i++){
+		if (o[i].checked){
+			osanka = o[i].value;
+			return osanka;
+		};
+	};
+};
 	
+function getOsanka(){
+	if(osanka == "sut"){
+		osanka = 1.5 * k;
+	} else if (osanka == "rovno-per"){
+		osanka = k / 2;
+	} else if (osanka == "norm"){
+		osanka = 0.75 * k;
+	} else if (osanka == "vyslop"){
+		osanka = k;
+	}
+
+}
 
 
 							// вытачки низа расчет 
@@ -372,6 +410,7 @@ function getShtanyZ(){
 
 
 
+
 /* Скрипт */
 
 var btn = document.getElementById("get");
@@ -472,22 +511,32 @@ data = {
   p:  +p.value,
   tn: +tn.value,
   vs: +vs.value,
-  tk: +tk.value
-
+  tk: +tk.value,
+  p5lp5p: +p5lp5p.value,
+  mg: +mg.value, 
+  vg: +vg.value,
+  cg: +cg.value,
+  a9t9: +a9t9 .value,
+  a2t2: +a2t2.value,
+  a8t8: +a8t8.value,
+  vb: +vb.value,
+  vp: +vp.value,
+  or: +or.value,
+  dr: +dr.value,
+  dl: +dl.value
 };
+
 getNp();
 getFigure();
-	console.log(getFigure());
 	getBal();
-	console.log(getHips());
 	getBal();
-	console.log(getBal());
 	getAss();
-	console.log(getAss());
+	gSp();
 	basic();
 	defaultData();
 	verifyAll();
     square();
+    getOsanka();
     vytachkiCount();
     razmerVytach();
     setValueVytochki();
@@ -495,9 +544,8 @@ getFigure();
     getShtanyP();
     getShtanyZ();
     setValueShtany();
-    console.log(data.vs);
-    console.log(data.tn);
-    console.log(Np);
+    console.log(osanka);
+
 
 };
 

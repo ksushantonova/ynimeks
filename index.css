@@ -1,14 +1,35 @@
 
 
-#variables{
+#inputs{
 	display: inline-block;
 	margin-bottom: 50px;
+	width: 250px;
+	text-align: left;
 }
+
+#inputs2{
+	display: inline-block;
+	margin-bottom: 50px;
+	width: 250px;
+	text-align: left;
+}
+
+
 #getFigure{
 	position: relative;
 	display: inline-block;
+	width: 130px;
 }
 #getFigure p{
+	width: 300px;
+}
+#gSp{
+	position: relative;
+	display: inline-block;
+	width: 160px;
+	
+}
+#gSp p{
 	width: 300px;
 }
 #gHips {
@@ -599,7 +620,30 @@
 	transform: rotate(270deg);
 }
 
+		/* верхняя часть  */
 
+
+
+#polochka1 {
+	position: relative;
+	width: 40%;
+	display: inline-block;
+
+}
+
+#pol {
+	margin:50px 50px 50px 90px;
+}
+#sp{
+	margin:50px 50px 51px 180px;
+}
+#spinka {
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	
+
+}
 
 
 
