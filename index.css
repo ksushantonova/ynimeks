@@ -1,6 +1,6 @@
 
 
-#inputs{
+#variables{
 	display: inline-block;
 	margin-bottom: 50px;
 	width: 250px;
@@ -21,7 +21,7 @@
 	width: 130px;
 }
 #getFigure p{
-	width: 300px;
+	width: 100px;
 }
 #gSp{
 	position: relative;
@@ -30,7 +30,7 @@
 	
 }
 #gSp p{
-	width: 300px;
+	width: 100px;
 }
 #gHips {
 	position: relative;
@@ -38,7 +38,7 @@
 	width: 130px;
 }
 #gHips p{
-	width: 300px;
+	width: 100px;
 }
 #gBalley {
 	position: relative;
@@ -46,7 +46,7 @@
 	width: 130px;
 }
 #gBalley p{
-	width: 300px;
+	width: 100px;
 }
 #gAss {
 	position: relative;
@@ -54,7 +54,7 @@
 	width: 130px;
 }
 #gAss p{
-	width: 300px;
+	width: 100px;
 }
 
 								/* вытачки */
@@ -269,6 +269,8 @@
 	position: relative;
 	width: 45%;
 	display: inline-block;
+	
+
 }
 #p {
 		margin:50px 0 50px 20px;
@@ -281,6 +283,7 @@
 	position: relative;
 	display: inline-block;
 	width: 49%;
+	
 
 }
 
@@ -512,8 +515,8 @@
 	text-align: center;
 	position: absolute;
 	font-size: 1.2vw;
-	bottom: 63.5vw;
-    left: 11vw;
+	bottom: 73.5vw;
+    left: 13.3vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -623,29 +626,119 @@
 		/* верхняя часть  */
 
 
-
+#polochkaa{
+	width: 100%;
+}
 #polochka1 {
 	position: relative;
-	width: 40%;
+	width: 37.5%;
 	display: inline-block;
+	margin-left: 60px;
+	margin-top: 55px;
+	margin-bottom: 55px;
+
 
 }
-
-#pol {
-	margin:50px 50px 50px 90px;
+#pol{
+	margin: 0 20px 0 30px;
 }
 #sp{
-	margin:50px 50px 51px 180px;
+	margin: 0 20px 0 20px;
 }
 #spinka {
 	position: relative;
 	display: inline-block;
-	width: 40%;
+	width: 38%;
+	float: right;
+	margin-right: 110px;
+	margin-top: 55px;
+	margin-bottom: 55px;
+
+
 	
 
 }
 
+   							/* полочка */
 
+.pol{
+	text-align: center;
+	position: absolute;
+	font-size: 1.5vw;
+	margin: 0 0 0 0;
+
+}
+#a1t1{
+	bottom: 21vw;
+	left: 0vw;
+	transform: rotate(270deg);
+}
+#a2t2{
+	bottom: 31vw;
+	left: 10vw;
+	transform: rotate(270deg);
+}
+#mvp{
+	bottom: 40.5vw;
+    left: 6.3vw;
+}
+#vgrp{
+	bottom: 33.5vw;
+	left: 12vw;
+	transform: rotate(270deg);
+}
+#shgp{
+	bottom: 19.5vw;
+    left: 6.3vw;
+}
+#a2t2np{
+	bottom: 9vw;
+	left: 9.2vw;
+	transform: rotate(270deg);
+}
+#poltnp{
+	bottom: 45.5vw;
+	left: 11.5vw;
+	transform: rotate(270deg);
+}
+#normap{
+	bottom: 38.7vw;
+    left: 12vw;
+	transform: rotate(270deg);
+}
+#naklonp{
+	bottom: 48.8vw;
+    left: 20vw;
+    transform: rotate(18deg);
+}
+#shgp2{
+	bottom: 37.5vw;
+    left: 18vw;
+}
+#p4{
+	bottom: 62vw;
+	left: 49.5vw;
+}
+#pv1{
+	bottom: 62vw;
+	left: 49.5vw;
+}
+#pv2{
+	bottom: 62vw;
+	left: 49.5vw;
+}
+#polmg{
+	bottom: 62vw;
+	left: 49.5vw;
+}
+#normanp{
+	bottom: 62vw;
+	left: 49.5vw;
+}
+#vbokap{
+	bottom: 62vw;
+	left: 49.5vw;
+}
 
 
 
