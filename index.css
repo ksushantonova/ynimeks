@@ -10,7 +10,7 @@
 #inputs2{
 	display: inline-block;
 	margin-bottom: 50px;
-	width: 250px;
+	width: 200px;
 	text-align: left;
 }
 
@@ -21,6 +21,14 @@
 	width: 130px;
 }
 #getFigure p{
+	width: 100px;
+}
+#getM{
+	position: relative;
+	display: inline-block;
+	width: 130px;
+}
+#getM p{
 	width: 100px;
 }
 #gSp{
@@ -670,7 +678,7 @@
 }
 #a1t1{
 	bottom: 21vw;
-	left: 0vw;
+	left: -0.5vw;
 	transform: rotate(270deg);
 }
 #a2t2{
@@ -680,7 +688,7 @@
 }
 #mvp{
 	bottom: 40.5vw;
-    left: 6.7vw;
+    left: 6.3vw;
 }
 #vgrp{
 	bottom: 33.5vw;
@@ -698,12 +706,12 @@
 }
 #poltnp{
 	bottom: 45.5vw;
-	left: 12.5vw;
+	left: 12vw;
 	transform: rotate(270deg);
 }
 #normap{
 	bottom: 38.7vw;
-    left: 12.3vw;
+    left: 12.5vw;
 	transform: rotate(270deg);
 }
 #naklonp{
@@ -712,18 +720,18 @@
     transform: rotate(18deg);
 }
 #shgp2{
-	bottom: 37.5vw;
-    left: 17.5vw;
+	bottom: 37.1vw;
+    left: 18.5vw;
 }
 #p4{
 	bottom: 41.3vw;
-    left: 24vw;
+    left: 23.3vw;
 	transform: rotate(270deg);
 }
 #pv1{
 	bottom: 25vw;
-    left: 17.5vw;
-	transform: rotate(302deg);
+    left: 18vw;
+    transform: rotate(297deg);
 }
 
 #polmg{
@@ -734,13 +742,111 @@
 }
 #normanp{
 	bottom: 1vw;
-    left: 33.4vw;
+    left: 33.7vw;
+
 }
 #vbokap{
 	bottom: 12vw;
     left: 39vw;
 	transform: rotate(270deg);
 }
+
+									/* спинка */
+
+#a8t8{
+	bottom: 23vw;
+	left: 30vw;
+	transform: rotate(270deg);
+}	
+#a9t9{
+	bottom: 23vw;
+	left: 38.4vw;
+	transform: rotate(270deg);
+}	
+
+#mvz{
+	bottom: 43.5vw;
+    left: 33vw;
+	
+}	
+
+#mvz2{
+	bottom: 38vw;
+    left: 27.8vw;
+	transform: rotate(270deg);
+}	
+
+#mvk{
+	font-size: 1.3vw;
+	bottom: 47.5vw;
+    left: 28vw;
+	transform: rotate(270deg);
+}	
+
+#shpl{
+	bottom: 51.5vw;
+    left: 17vw;
+	
+}	
+
+#vpv{
+	font-size: 1.2vw;
+	bottom: 49vw;
+    left: 4.8vw;
+	transform: rotate(270deg);
+}
+
+#shsp{
+	bottom: 32.3vw;
+    left: 18.3vw;
+	
+}	
+
+#nn{
+	bottom: 0.8vw;
+    left: 4vw;
+}	
+
+#vbz{
+	bottom: 11vw;
+	left: -0.8vw;
+	transform: rotate(270deg);
+}	
+
+#kvz{
+	font-size: 1.2vw;
+	bottom: 23.8vw;
+    left: 6.7vw;
+	
+}	
+
+#dkv{
+	font-size: 1.3vw;
+    bottom: 48.8vw;
+    left: 24vw;
+    transform: rotate(353deg);
+}	
+
+#dv{
+	bottom: 44.6vw;
+    left: 20.5vw;
+	transform: rotate(270deg);
+}	
+
+#shv{
+	font-size: 1vw;
+    bottom: 48.55vw;
+    left: 18.8vw;
+    transform: rotate(353deg);
+}	
+
+#vk{
+	font-size: 1vw;
+    bottom: 29.5vw;
+    left: 9vw;
+	transform: rotate(270deg);
+}	
+
 
 
 

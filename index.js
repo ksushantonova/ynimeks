@@ -119,6 +119,11 @@ f9 = (data.m7 - N) / 2;
 
 ns = (N + Np) / 2;
 Nsr = (N + Np) / 2;
+Ng = data.p5lp5p / 10;
+Nsrg = (Ng + Np) / 2;
+kg = Ng / 2;
+
+
 
 
 
@@ -137,6 +142,13 @@ function defaultData(){
 	if (data.tk == 0){
 		data.tk = (6.5 * Np) + (5 * N);
 	};
+
+	if (data.vg == 0){
+		data.vg = 5.5 * Ng;
+	}
+	if (data.cg == 0){
+		data.cg = 2.25 * Ng;
+	}
 }
 
 
@@ -245,15 +257,33 @@ function gSp(){
 		};
 	};
 };
-	
+
+var ma;
+
+function gM(){
+	var m = document.getElementsByName("M");
+	for (var i = 0; i < m.length; i++){
+		if (m[i].checked){
+			ma = m[i].value;
+			return ma;
+		};
+	};
+};
+
+var os2;
+
 function getOsanka(){
 	if(osanka == "sut"){
+		os2 = "sut";
 		osanka = 1.5 * k;
 	} else if (osanka == "rovno-per"){
+		os2 = "rovno-per";
 		osanka = k / 2;
 	} else if (osanka == "norm"){
+		os2 = "norm";
 		osanka = 0.75 * k;
 	} else if (osanka == "vyslop"){
+		os2 = "vyslop";
 		osanka = k;
 	}
 
@@ -411,22 +441,77 @@ function getShtanyZ(){
  var a1t1,a2t2,mvp,vgrp,shgp,a2t2np,poltnp,norma,naklon,shgp2,p4,pv1,polm,normanp,vbokap;
 
 function getPol(){
-	a1t1 = data.a2t2 - (1.5 * N);
+	a1t1 = data.a2t2 - (1.5 * Ng);
 	a2t2m = data.a2t2;
-	mvp = 1.5 * N;
+	mvp = 1.5 * Ng;
 	vgrp = data.vg;
 	shgp = data.cg / 2;
 	a2t2np = data.a2t2 - data.vg;
-	poltnp = 1.5 * N;
-	normap = N;
-	naklonp = 2.5 * N;
-	shgp2 = 2 * N;
-	p4 = ((3 * N) - data.vp) - (1.5 * k);
+	poltnp = 1.5 * Ng;
+	normap = Ng;
+	naklonp = 2.5 * Ng;
+	shgp2 = 2 * Ng;
+	p4 = ((3 * Ng) - data.vp) - (1.5 * kg);
 	pv1 = "1/2"
 	polmg = data.mg / 2;
-	normanp = N;
+	normanp = Ng;
 	vbokap = data.vb;
 }
+
+var a8t8,a9t9,mvz,mvz2,mvk,shpl,vpv,shsp,nn,vbz,kvz,dkv,dv,shv,vk,mvz3;
+function getMvz(){
+   if (Np > Ng){
+   	mvz3 = Np - Ng;
+   	if (mvz3 > 0.5){
+   		mvz3 = Nsrg;
+   	} else {
+   		mvz3 = Ng;
+   	};
+   } else {
+   		mvz3 = Ng - Np;
+   	 if(mvz3 > 4){
+   	 	mvz3 = Nsrg;
+   	 } else {
+   	 	mvz3 = Ng;
+   	 };
+   };
+
+   if( os2 == "sut"){
+   	mvz3 = mvz3 * 1.75; 
+   } else {
+   mvz3 = mvz3 * 1.5;
+   }
+   return mvz3;
+};
+function getZad(){
+	a8t8m = data.a8t8;
+	a9t9m = data.a9t9;
+	mvz = mvz3;
+   mvz2 = 2.5 * Ng;
+   mvk = kg;
+   shpl = 2.5 * Ng;
+   vpv = data.vp;
+   shsp = 2.25 * Ng;
+   nn = 1.5 * Ng;
+   vbz = data.vb;
+   kvz = kg;
+   dkv = 1.5 * kg;
+   dv = 2 * Ng;
+   shv = osanka;
+   vk = kg;
+};
+
+function korrNaMale(){
+	if ( ma == "male"){
+		naklonp += (kg / 2) + (0.25 * Ng);
+		shgp2 += (kg / 2) + (0.25 * Ng);
+		shpl += (kg / 2) + (0.25 * Ng);
+		shsp += (kg / 2) + (0.25 * Ng);
+	};
+};
+
+
+
 
 /* Скрипт */
 
@@ -533,7 +618,25 @@ document.getElementById("a1t1").innerHTML = Math.floor((a1t1)*100)/100;
 	document.getElementById("normanp").innerHTML = Math.floor((normanp)*100)/100;
 	document.getElementById("vbokap").innerHTML = Math.floor((vbokap)*100)/100;
 
+	document.getElementById("a8t8").innerHTML = Math.floor((a8t8m)*100)/100;
+	document.getElementById("a9t9").innerHTML = Math.floor((a9t9m)*100)/100;
+	document.getElementById("mvz").innerHTML = Math.floor((mvz)*100)/100;
+	document.getElementById("mvz2").innerHTML = Math.floor((mvz2)*100)/100;
+	document.getElementById("mvk").innerHTML = Math.floor((mvk)*100)/100;
+	document.getElementById("shpl").innerHTML = Math.floor((shpl)*100)/100;
+	document.getElementById("vpv").innerHTML = Math.floor((vpv)*100)/100;
+	document.getElementById("shsp").innerHTML = Math.floor((shsp)*100)/100;
+	document.getElementById("nn").innerHTML = Math.floor((nn)*100)/100;
+	document.getElementById("vbz").innerHTML = Math.floor((vbz)*100)/100;
+	document.getElementById("kvz").innerHTML =  Math.floor((kvz)*100)/100;
+	document.getElementById("dkv").innerHTML = Math.floor((dkv)*100)/100;
+	document.getElementById("dv").innerHTML = Math.floor((dv)*100)/100;
+	document.getElementById("shv").innerHTML = Math.floor((shv)*100)/100;
+	document.getElementById("vk").innerHTML = Math.floor((vk)*100)/100;
+	
+
 }
+
 
 							      // финальная функция
 
@@ -568,6 +671,7 @@ getFigure();
 	getBal();
 	getAss();
 	gSp();
+	gM();
 	basic();
 	defaultData();
 	verifyAll();
@@ -581,6 +685,9 @@ getFigure();
     getShtanyZ();
     setValueShtany();
      getPol();
+     getMvz();
+     getZad();
+     korrNaMale();
      setValueVerh();
     console.log(osanka);
 
