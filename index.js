@@ -503,10 +503,10 @@ function getZad(){
 
 function korrNaMale(){
 	if ( ma == "male"){
-		naklonp += (kg / 2) + (0.25 * Ng);
-		shgp2 += (kg / 2) + (0.25 * Ng);
-		shpl += (kg / 2) + (0.25 * Ng);
-		shsp += (kg / 2) + (0.25 * Ng);
+		naklonp = naklonp + (kg / 2) + (0.25 * Ng);
+		shgp2 = shgp2 + (kg / 2) + (0.25 * Ng);
+		shpl = shpl + (kg / 2) + (0.25 * Ng);
+		shsp = shsp + (kg / 2) + (0.25 * Ng);
 	};
 };
 
