@@ -460,13 +460,13 @@
 
 #vsz{
 	text-align: center;
-	position: absolute;
-	font-size: 1.5vw;
-	bottom: 78vw;
-    left: 34vw;
-	width: 30px;
-	margin: 0 0 0 0;
-	transform: rotate(270deg);
+    position: absolute;
+    font-size: 1.5vw;
+    bottom: 78vw;
+    left: 37vw;
+    width: 30px;
+    margin: 0 0 0 0;
+    transform: rotate(280deg);
 }
 
 #vdz1{
@@ -674,36 +674,36 @@
 	transform: rotate(270deg);
 }
 #a2t2{
-	bottom: 31vw;
-	left: 10vw;
+	bottom: 24vw;
+	left: 10.5vw;
 	transform: rotate(270deg);
 }
 #mvp{
 	bottom: 40.5vw;
-    left: 6.3vw;
+    left: 6.7vw;
 }
 #vgrp{
 	bottom: 33.5vw;
-	left: 12vw;
+    left: 12.5vw;
 	transform: rotate(270deg);
 }
 #shgp{
-	bottom: 19.5vw;
-    left: 6.3vw;
+	bottom: 17.3vw;
+    left: 8.9vw;
 }
 #a2t2np{
 	bottom: 9vw;
-	left: 9.2vw;
+	left: 10.5vw;
 	transform: rotate(270deg);
 }
 #poltnp{
 	bottom: 45.5vw;
-	left: 11.5vw;
+	left: 12.5vw;
 	transform: rotate(270deg);
 }
 #normap{
 	bottom: 38.7vw;
-    left: 12vw;
+    left: 12.3vw;
 	transform: rotate(270deg);
 }
 #naklonp{
@@ -734,11 +734,11 @@
 }
 #normanp{
 	bottom: 1vw;
-    left: 32vw;
+    left: 33.4vw;
 }
 #vbokap{
 	bottom: 12vw;
-    left: 37vw;
+    left: 39vw;
 	transform: rotate(270deg);
 }
 

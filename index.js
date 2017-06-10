@@ -406,10 +406,27 @@ function getShtanyZ(){
 	nppz = nvpz =  res + (N / 2);
 	tknz = data.tn - data.tk;
 
+};
+
+ var a1t1,a2t2,mvp,vgrp,shgp,a2t2np,poltnp,norma,naklon,shgp2,p4,pv1,polm,normanp,vbokap;
+
+function getPol(){
+	a1t1 = data.a2t2 - (1.5 * N);
+	a2t2m = data.a2t2;
+	mvp = 1.5 * N;
+	vgrp = data.vg;
+	shgp = data.cg / 2;
+	a2t2np = data.a2t2 - data.vg;
+	poltnp = 1.5 * N;
+	normap = N;
+	naklonp = 2.5 * N;
+	shgp2 = 2 * N;
+	p4 = ((3 * N) - data.vp) - (1.5 * k);
+	pv1 = "1/2"
+	polmg = data.mg / 2;
+	normanp = N;
+	vbokap = data.vb;
 }
-
-
-
 
 /* Скрипт */
 
@@ -499,6 +516,25 @@ function setValueShtany(){
 
 };
 
+function setValueVerh(){
+document.getElementById("a1t1").innerHTML = Math.floor((a1t1)*100)/100;
+	document.getElementById("a2t2").innerHTML = Math.floor((a2t2m)*100)/100;
+	document.getElementById("mvp").innerHTML = Math.floor((mvp)*100)/100;
+	document.getElementById("vgrp").innerHTML = Math.floor((vgrp)*100)/100;
+	document.getElementById("shgp").innerHTML = Math.floor((shgp)*100)/100;
+	document.getElementById("a2t2np").innerHTML = Math.floor((a2t2np)*100)/100;
+	document.getElementById("poltnp").innerHTML = Math.floor((poltnp)*100)/100;
+	document.getElementById("normap").innerHTML = Math.floor((normap)*100)/100;
+	document.getElementById("naklonp").innerHTML = Math.floor((naklonp)*100)/100;
+	document.getElementById("shgp2").innerHTML = Math.floor((shgp2)*100)/100;
+	document.getElementById("p4").innerHTML = Math.floor((p4)*100)/100;
+	document.getElementById("pv1").innerHTML = pv1;
+	document.getElementById("polmg").innerHTML = Math.floor((polmg)*100)/100;
+	document.getElementById("normanp").innerHTML = Math.floor((normanp)*100)/100;
+	document.getElementById("vbokap").innerHTML = Math.floor((vbokap)*100)/100;
+
+}
+
 							      // финальная функция
 
 function main(){
@@ -544,6 +580,8 @@ getFigure();
     getShtanyP();
     getShtanyZ();
     setValueShtany();
+     getPol();
+     setValueVerh();
     console.log(osanka);
 
 
