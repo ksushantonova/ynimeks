@@ -755,7 +755,7 @@
 
 #a8t8{
 	bottom: 23vw;
-	left: 30vw;
+	left: 30.3vw;
 	transform: rotate(270deg);
 }	
 #a9t9{
@@ -772,7 +772,7 @@
 
 #mvz2{
 	bottom: 38vw;
-    left: 27.8vw;
+    left: 27.5vw;
 	transform: rotate(270deg);
 }	
 
@@ -808,8 +808,8 @@
 }	
 
 #vbz{
-	bottom: 11vw;
-	left: -0.8vw;
+	bottom: 12vw;
+    left: -0.5vw;
 	transform: rotate(270deg);
 }	
 
@@ -829,7 +829,7 @@
 
 #dv{
 	bottom: 44.6vw;
-    left: 20.5vw;
+    left: 21vw;
 	transform: rotate(270deg);
 }	
 
@@ -847,12 +847,123 @@
 	transform: rotate(270deg);
 }	
 
+						/* соединение */
+
+#per {
+	position: relative;
+	width: 36%;
+	display: inline-block;
+	
+
+}
+#polv {
+		margin:50px 0 50px 110px;
+}
+#zadnv{
+		margin:50px 0 51px 240px;
+
+}
+#zadn {
+	position: relative;
+	display: inline-block;
+	width: 38%;
+	
+
+}
+
+  						/* переднее соединение */
+
+#kd1{
+	font-size: 1vw;
+    bottom: 23.8vw;
+    left: 40.5vw;
 
 
+}
+#kn1{
+	font-size: 1.4vw;
+    bottom: 40.2vw;
+    left: 24.6vw;
+	transform: rotate(270deg);
 
+}
+#nn2{
+	font-size: 1.4vw;
+    bottom: 40vw;
+    left: 34.7vw;
+	transform: rotate(270deg);
 
+}
+#kv1{
+    bottom: 23.5vw;
+    left: 25.2vw;
+}
+#kv2{
+    bottom: 23.5vw;
+    left: 35.7vw;
+}
+#m5d2p{
+	font-size: 1.2vw;
+    bottom: 2.5vw;
+    left: 40.5vw;
+}
+#vbn{
+    bottom: 14vw;
+    left: 6vw;
+	transform: rotate(270deg);
+}
 
+								/* заднее */
 
+#n1{
+	font-size: 1.4vw;
+	bottom: 44.2vw;
+    left: 25.2vw;
+    transform: rotate(270deg);
+}
+#n2{
+    bottom: 43.2vw;
+    left: 39.6vw;
+    transform: rotate(270deg);
+}
+#n3{
+	bottom: 43.2vw;
+    left: 52vw;
+    transform: rotate(270deg);
+}
+#rast{
+	bottom: 47vw;
+    left: 46.5vw;
+}
+#k1{
+    font-size: 1vw;
+    bottom: 23.8vw;
+    left: 18vw;
+}
+#k2{
+    bottom: 23.5vw;
+    left: 24.2vw;
+}
+#k3{
+
+    bottom: 23.5vw;
+    left: 40.5vw;
+}
+#k4{
+	font-size: 1vw;
+	bottom: 23.8vw;
+    left: 52.6vw;
+}
+#m5d2z{
+	font-size: 1.2vw;
+    bottom: 2.5vw;
+    left: 18.1vw;
+}
+#vbn2{
+    bottom: 14vw;
+    left: 52vw;
+    transform: rotate(270deg);
+}
 
 
 
