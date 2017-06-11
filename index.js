@@ -510,6 +510,65 @@ function korrNaMale(){
 	};
 };
 
+var otp,otsp,m5vp,m5vz,kd1,kn1,nn2,evyp,evyz,kv1,kv2,m5d2p,vbn,n1,n2,n3,rast,k1,k2,k3,k4,m5d2z,vbn2;
+
+function getSoed(){
+	otp = (5 * N) - data.m3 - (data.m5 / 2);
+	otsp = (5 * N) - data.m7 - (data.m5 / 2); 
+	m5vp = kg / 4;
+	m5vz = kg / 4;
+	kd1 = kg / 2;
+	kn1 = kg;
+	nn2 = Ng;
+	evyp = otp - m5vp;
+	evyz = otsp - m5vz;
+	m5d2p = data.m5 / 2;
+	vbn = getHips() * Np;
+
+	n1 = n2 = n3 = Ng;
+	rast = 1.75 * Ng;
+	k1 = kg / 2;
+	m5d2z = data.m5 / 2;
+	vbn2 = vbn;
+
+}
+
+function rasV(){
+	var raz,raz2,razn1,razn2;
+	if (evyp > (1.5 * kg)){
+		kv1 = 1.5 * kg;
+		raz = evyp - (1.5 * kg);
+		if (raz <= (1.5 * kg)){
+			kv2 = raz;
+		} else{
+			kv2 = 1.5 * kg;
+			raz2 = raz - (1.5 * kg);
+			kd1 = kd1 + raz2;
+		}
+	} else {
+		kv1 = evyp;
+		kv2 = 0;
+		kd1 += 0;
+	};
+
+	if (evyz > (1.5 * kg)){
+		k3 = 1.5 * kg;
+		razn1 = evyz - (1.5 * kg);
+	 if ( razn1 <= (1.5 * kg)){
+		k2 = razn1;
+		k4 = 0;
+	} else {
+		k2 = 1.5 * kg;
+		razn2 = razn1 - (1.5 * kg);
+		k4 = razn2;
+	};
+} else { 
+	k3 = evyz;
+	k2 = 0;
+	k4 = 0;
+}
+
+};
 
 
 
@@ -637,6 +696,30 @@ document.getElementById("a1t1").innerHTML = Math.floor((a1t1)*100)/100;
 
 }
 
+function setValueSoed(){
+
+	document.getElementById("kd1").innerHTML = Math.floor((kd1)*100)/100;
+	document.getElementById("kn1").innerHTML = Math.floor((kn1)*100)/100;
+	document.getElementById("nn2").innerHTML = Math.floor((nn2)*100)/100;
+	document.getElementById("kv1").innerHTML = Math.floor((kv1)*100)/100;
+	document.getElementById("kv2").innerHTML = Math.floor((kv2)*100)/100;
+	document.getElementById("m5d2p").innerHTML = Math.floor((m5d2p)*100)/100;
+	document.getElementById("vbn").innerHTML = Math.floor((vbn)*100)/100;
+
+
+	document.getElementById("n1").innerHTML = Math.floor((n1)*100)/100;
+	document.getElementById("n2").innerHTML = Math.floor((n2)*100)/100;
+	document.getElementById("n3").innerHTML = Math.floor((n3)*100)/100;
+	document.getElementById("rast").innerHTML =  Math.floor((rast)*100)/100;
+	document.getElementById("k1").innerHTML = Math.floor((k1)*100)/100;
+	document.getElementById("k2").innerHTML = Math.floor((k2)*100)/100;
+	document.getElementById("k3").innerHTML = Math.floor((k3)*100)/100;
+	document.getElementById("k4").innerHTML = Math.floor((k4)*100)/100;
+	document.getElementById("m5d2z").innerHTML = Math.floor((m5d2z)*100)/100;
+	document.getElementById("vbn2").innerHTML = Math.floor((vbn2)*100)/100;
+
+}
+
 
 							      // финальная функция
 
@@ -689,6 +772,9 @@ getFigure();
      getZad();
      korrNaMale();
      setValueVerh();
+     getSoed();
+     rasV();
+      setValueSoed();
     console.log(osanka);
 
 
