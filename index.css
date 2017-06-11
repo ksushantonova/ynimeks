@@ -909,7 +909,7 @@
 }
 #vbn{
     bottom: 14vw;
-    left: 6vw;
+    left: 6.5vw;
 	transform: rotate(270deg);
 }
 
@@ -923,7 +923,7 @@
 }
 #n2{
     bottom: 43.2vw;
-    left: 39.6vw;
+    left: 40vw;
     transform: rotate(270deg);
 }
 #n3{
@@ -961,7 +961,7 @@
 }
 #vbn2{
     bottom: 14vw;
-    left: 52vw;
+    left: 52.5vw;
     transform: rotate(270deg);
 }
 
