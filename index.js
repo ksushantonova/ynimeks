@@ -24,6 +24,7 @@ var ot = document.getElementById("Ot"),
  dl = document.getElementById("Dl"),
  pr = document.getElementById("Pr"),
  dr = document.getElementById("Dr");
+ mr = document.getElementById("Mr");
 
 
 
@@ -150,6 +151,15 @@ function defaultData(){
 	if (data.cg == 0){
 		data.cg = 2.25 * Ng;
 	}
+	if (data.cg == 0){
+		data.cg = 2.25 * Ng;
+	}
+	if (data.dl == 0){
+		spu = 4 * Np;
+	};
+	if (data.dr == 0){
+		spu2 = 4.5 * Np;
+	};
 }
 
 
@@ -569,9 +579,49 @@ function rasV(){
 	k3 = evyz;
 	k2 = 0;
 	k4 = 0;
-}
+};
 
 };
+
+var shr,kr,Nr,shkv,vok,zk,o1,o2,o3,o4,o5,o6,o7,o8,spu,spu2,bok,q,qk,qkv,qksh,nizl,nizp,nizk;
+
+function getRukav(){
+ 	shr = data.or + 4;
+ 	Nr = shr / 6.5;
+ 	kr = Nr / 2;
+ 	shkv = 1.5 * Nr;
+ 	zk = kr;
+ 	o1 = 0.75 * kr;
+ 	o2 = 1.5 * kr;
+ 	o3 = kr;
+ 	o4 = 0.75 * kr;
+ 	o5 = kr / 2;
+ 	o6 = 1;
+ 	bok = 0.5;
+    qk = "Q + " +  Math.floor((k2)*100)/100 + "";
+ 	qkv = 2 * Nr;
+ 	qksh = kr;
+ 	nizk = kr;
+}
+
+function proyma(){
+  if (data.mr < Nr){
+  	vok = (data.pr / 3) + (kr / 2);
+  	nizl = (2.5 * Nr) + (kr / 2);
+  	nizp = (2 * Nr) + (kr / 2);
+  } else if (data.mr > Nr && data.mr < (1.5 * Nr)){
+  	vok = data.pr / 3;
+	nizl = 2.5 * Nr;
+	nizp = 2 * Nr;
+  } else if (data.mr > (1.5 * Nr)){
+  	vok = (data.pr / 3) - (kr / 2);
+  	nizl = (2.5 * Nr) - (kr / 2);
+  	nizp = (2 * Nr) - (kr / 2);
+  };
+	
+	spu = data.dl - vok;	
+	spu2 = (data.dr - spu) - vok; 
+}
 
 
 
@@ -591,6 +641,11 @@ function setValueVytochki(){
 	document.getElementById("m7v1").innerHTML = Math.floor((m7v1)*100)/100;
 	document.getElementById("m7v2").innerHTML = Math.floor((m7v2)*100)/100;
 	document.getElementById("m9v").innerHTML = Math.floor((m9v)*100)/100;
+
+	document.getElementById("hp1").innerHTML = Math.floor((getBal() * Np)* 100)/100;
+	document.getElementById("hp5").innerHTML = Math.floor((getHips() * Np)* 100)/100;
+	document.getElementById("hz1").innerHTML = Math.floor((getAss() * Np)* 100)/100;
+	document.getElementById("hz2").innerHTML = Math.floor((getAss() * Np)* 100)/100;	
 
 if (f1 > 0){
 	document.getElementById("f1").innerHTML = "+" + Math.floor((f1)*100)/100;
@@ -617,10 +672,8 @@ if(m3v2 == 0){
 } else {
 document.getElementById("hp2").innerHTML = Math.floor((getBal() * Np)* 100)/100; }
 
-	document.getElementById("hp1").innerHTML = Math.floor((getBal() * Np)* 100)/100;
-	document.getElementById("hp5").innerHTML = Math.floor((getHips() * Np)* 100)/100;
-	document.getElementById("hz1").innerHTML = Math.floor((getAss() * Np)* 100)/100;
-	document.getElementById("hz2").innerHTML = Math.floor((getAss() * Np)* 100)/100;	
+
+	
 	
 
 
@@ -723,6 +776,32 @@ function setValueSoed(){
 
 }
 
+function setValueRukav(){
+
+	document.getElementById("shkv").innerHTML = Math.floor((shkv)*100)/100;
+	document.getElementById("vok").innerHTML = Math.floor((vok)*100)/100;
+	document.getElementById("zk").innerHTML = Math.floor((zk)*100)/100;
+	document.getElementById("o1").innerHTML =  Math.floor((o1)*100)/100;
+	document.getElementById("o2").innerHTML = Math.floor((o2)*100)/100;
+	document.getElementById("o3").innerHTML = Math.floor((o3)*100)/100;
+	document.getElementById("o4").innerHTML = Math.floor((o4)*100)/100;
+	document.getElementById("o5").innerHTML = Math.floor((o5)*100)/100;
+	document.getElementById("o6").innerHTML = Math.floor((o6)*100)/100;
+	document.getElementById("o7").innerHTML = "(1/2)";
+	document.getElementById("o8").innerHTML = "(1/2)";
+	document.getElementById("spu").innerHTML = Math.floor((spu)*100)/100;
+	document.getElementById("spu2").innerHTML = Math.floor((spu2)*100)/100;
+	document.getElementById("bok").innerHTML =  Math.floor((bok)*100)/100;
+	document.getElementById("q").innerHTML = "Q";
+	document.getElementById("qk").innerHTML = qk;
+	document.getElementById("qkv").innerHTML = Math.floor((qkv)*100)/100;
+	document.getElementById("qksh").innerHTML = Math.floor((qksh)*100)/100;
+	document.getElementById("nizl").innerHTML = Math.floor((nizl)*100)/100;
+	document.getElementById("nizp").innerHTML = Math.floor((nizp)*100)/100;
+	document.getElementById("nizk").innerHTML = Math.floor((nizk)*100)/100;
+
+}
+
 
 							      // финальная функция
 
@@ -749,7 +828,8 @@ data = {
   or: +or.value,
   dr: +dr.value,
   dl: +dl.value,
-  pr: +pr.value
+  pr: +pr.value,
+  mr: +mr.value
 };
 
 getNp();
@@ -779,9 +859,9 @@ getFigure();
      getSoed();
      rasV();
       setValueSoed();
-    console.log(osanka);
-
-
+      getRukav();
+      proyma();
+      setValueRukav();
 };
 
 // поправить штуку с x на построении полочки и спинки

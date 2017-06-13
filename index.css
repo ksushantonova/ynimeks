@@ -58,9 +58,10 @@
 	width: 100px;
 }
 #gHips {
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	width: 130px;
+	left: 1023px;
 }
 #gHips p{
 	width: 100px;
