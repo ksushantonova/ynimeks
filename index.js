@@ -22,6 +22,7 @@ var ot = document.getElementById("Ot"),
  vp = document.getElementById("P6"),
  or = document.getElementById("Or"),
  dl = document.getElementById("Dl"),
+ pr = document.getElementById("Pr"),
  dr = document.getElementById("Dr");
 
 
@@ -201,6 +202,7 @@ function square(){
 var figure; 
 
 function getFigure(){
+
        var fig = document.getElementsByName("figure");
         for (var i = 0; i < fig.length; i++) {
             if (fig[i].checked){
@@ -213,6 +215,7 @@ function getFigure(){
 var hips;
 
 function getHips(){
+
 	var hip = document.getElementsByName("hips");
 	for (var i = 0; i < hip.length; i++){
 		if (hip[i].checked){
@@ -745,7 +748,8 @@ data = {
   vp: +vp.value,
   or: +or.value,
   dr: +dr.value,
-  dl: +dl.value
+  dl: +dl.value,
+  pr: +pr.value
 };
 
 getNp();
@@ -780,4 +784,4 @@ getFigure();
 
 };
 
-
+// поправить штуку с x на построении полочки и спинки

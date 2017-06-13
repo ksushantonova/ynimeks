@@ -2,22 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Unimeks</title>
 	<link rel="stylesheet" href="index.css">
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-	
+<div id="sorry"> Sorry, the page of your screen-size is unavailable now, but going to be little later. Please use 1366/765px. </div>
 <div id="inputs">
-		<div id="variables">
-	<p>От<input id="Ot" type="text" value = "65"></p>
-	<p>Об<input id="Ob" type="text" value = "92"></p>
-	<p>m3<input id="m3" type="text" value="3.16"></p>
-	<p>m5<input id="m5" type="text" value="5.4"></p>
-	<p>m7<input id="m7" type="text"  value="5"></p>
-	<p>Р<input id="P" type="text"  value="167"></p>
-	<p>ВС<input id="TY" type="text" value="27.1"></p>
-	<p>T-К<input id="TK" type="text" value="63"></p>
-	<p>T-H<input id="TN" type="text" value="110"></p>
+		<div id="variables" class="form-group">
+
+	<p><label for="Ot">От</label><input id="Ot" class="form-horizontal" type="text" value = "65"></p>
+	<p><label for="Ob">Об</label><input id="Ob" class="form-control" type="text" value = "92"></p>
+	<p><label for="m3">m3</label><input id="m3" class="form-control" type="text" value="3.16"></p>
+	<p><label for="m5">m5</label><input id="m5" class="form-control" type="text" value="5.4"></p>
+	<p><label for="m7">m7</label><input id="m7" class="form-control" type="text"  value="5"></p>
+	<p><label for="P">Р</label><input id="P" class="form-control" type="text"  value="167"></p>
+	<p><label for="TY">ВС</label><input id="TY" class="form-control" type="text" value="27.1"></p>
+	<p><label for="TK">T-К</label><input id="TK" class="form-control" type="text" value="63"></p>
+	<p><label for="TN">T-H</label><input id="TN" class="form-control" type="text" value="110"></p>
 		</div>
 
 
@@ -35,55 +45,70 @@
 	<p>Ор<input id="Or" type="text" value="25.5"></p>
 	<p>Др<input id="Dr" type="text" value="64"></p>
 	<p>Дл<input id="Dl" type="text" value="37"></p>
+	<p>Пройма<input id="Pr" type="text" value="37"></p>
 
 		</div>
 
-		<div id="getM">
-	<p>Пол</br><input name="M" type="radio" value="male">Мужчина</p> 
-	<p><input name="M" type="radio" value="female">Женщина</p>
+		<div id="getM" class="form-group">
+		 <label for="sel1">Пол</label></br>
+	  <input type="radio" name="M" class="form-check-input" value="male">Мужчина</br>
+	  <input type="radio"  name="M" class="form-check-input" value="female">Женщина</br>
 </div>
 
-		<div id="getFigure">
-	<p>Фигура</br><input name="figure" type="radio" value="normal">Нормальная</p> 
-	<p><input name="figure" type="radio" value="bigj">Большой живот </p>
-	<p><input name="figure" type="radio" value="bigass">Большая попа</p> </div>
+		<div id="getFigure" class="form-group">
+		 <label for="sel2">Фигура</label></br>
+		 <div>
+	 <input type="radio" name="figure"  value="normal">Нормальная</br>
+	 <img src="images/normal.jpg"></img></div>
+	 <div>
+	 <input type="radio" name="figure"  value="bigj">Большой живот </br>
+	  <img src="images/bigjivot.jpg" ></img></div>
+	  <div>
+	 <input type="radio" name="figure"  value="bigass">Большая попа </br>
+	  <img src="images/bigpopa.jpg"></img>
+	  </div>
+	</div>
 
-		<div id="gSp">
-	<p>Осанка</br><input name="sp" type="radio" value="sut">Сутулая</p> 
-	<p><input name="sp" type="radio" value="rovno-per">Ровно-перегибистая</p>
-	<p><input name="sp" type="radio" value="norm">Нормлаьная</p>
-	<p><input name="sp" type="radio" value="vyslop">Высокие лопатки</p>
+		<div id="gSp" class="form-group">
+		 <label for="sel3">Осанка </label></br>
+	 <input type="radio" <input type="radio"name="sp" value="sut">Сутулая </br>
+	 <input type="radio" name="sp" value="rovno-per">Ровно-перегибистая</br>
+	 <input type="radio" name="sp" value="norm">Нормлаьная</br>
+	 <input type="radio" name="sp" value="vyslop">Высокие лопатки</br>
 
    
 		</div>	
-		<div id="gBalley">
-	<p>Живот</br><input name="bal" type="radio" value="1.5">Высокий</p> 
-	<p><input name="bal" type="radio" value="2.5">Средний</p>
-	<p><input name="bal" type="radio" value="3.5">Ниже среднего</p>
-	<p><input name="bal" type="radio" value="5">Низкий</p>
+		<div id="gBalley" class="form-group">
+		 <label for="sel4">Живот</label></br>
+	 <input type="radio" name="bal" value="1.5">Высокий </br>
+	 <input type="radio" name="bal" value="2.5">Средний</br>
+	 <input type="radio" name="bal" value="3.5">Ниже среднего</br>
+	 <input type="radio" name="bal" value="5">Низкий</br>
    
 		</div>	
 
-<div id="gHips">
-	<p>Бедра</br><input name="hips" type="radio" value="1.5">Высокие</p> 
-	<p><input name="hips" type="radio" value="2.5">Средние</p>
-	<p><input name="hips" type="radio" value="3.5">Ниже среднего</p>
-	<p><input name="hips" type="radio" value="5">Низкие</p>
+<div id="gHips" class="form-group">
+ <label for="sel5">Бедра</label></br>
+	 <input type="radio" name="hips" value="1.5">Высокие </br>
+	 <input type="radio" name="hips" value="2.5">Средние</br>
+	 <input type="radio" name="hips" value="3.5">Ниже среднего</br>
+	 <input type="radio" name="hips" value="5">Низкие</br>
    
-		</div>	
+		</div>
 
 	
 
-		<div id="gAss">
-	<p>Попа</br><input name="ass" type="radio" value="1.5">Высокая</p> 
-	<p><input name="ass" type="radio" value="2.5">Средняя</p>
-	<p><input name="ass" type="radio" value="3.5">Ниже средней</p>
-	<p><input name="ass" type="radio" value="5">Низкая</p>
+		<div id="gAss" class="form-group">
+		 <label for="sel6">Попа</label></br>
+	<input type="radio" name="ass" value="1.5">Высокая </br>
+	 <input type="radio" name="ass" value="2.5">Средняя</br>
+	 <input type="radio" name="ass" value="3.5">Ниже средней</br>
+	 <input type="radio" name="ass" value="5">Низкая</br>
 
 	<button id="get">Расчитать</button>
    
 		</div>	
-	
+
 	<div class="black"></div>
 							
 				<div >							
@@ -251,14 +276,60 @@
 <div id="m5d2z" class="pol"></div>
 <div id="vbn2" class="pol"></div>
 			</div>
-			<div>
-				
-
-
-			</div>
-
 		</div>
 				
+	<div class="black"></div>
+
+	<div id="rukav">
+		<div id="ruk">
+		<img id="r" src="images/rukav.jpg" style="width: 100%; height: auto"></img>
+
+ <div id="shkv" class="pol">10.5</div> <!-- ширина квадрата по вертикали-->
+ <div id="vok" class="pol">10.5</div> <!-- высота оката рукава -->
+ <div id="zk" class="pol">10.5</div> <!-- ширина к-->
+ <div id="o1" class="pol">10.5</div> <!-- отступ 1 верхний -->
+ <div id="o2" class="pol">10.5</div> <!-- отступ нижний -->
+ <div id="o3" class="pol">10.5</div> <!-- отступ к вверх -->
+ <div id="o4" class="pol">10.5</div> <!-- отступ еще чуть выше (3\4k) -->
+<div id="o5" class="pol">10.5</div><!--  отступ справа верхний-->
+<div id="o7" class="pol">10.5</div><!--  половина-->
+<div id="o6" class="pol">10.5</div><!--  отступ справа нижний-->
+<div id="o8" class="pol">10.5</div><!--  вторая половина-->
+<div id="spu" class="pol">10.5</div> <!-- первый спуск в 4 нр(длина локтя (дефолт)) -->
+<div id="spu2" class="pol">10.5</div> <!-- второй спуск в 4.5 нр -->
+<div id="bok" class="pol">10.5</div> <!-- боковой отступ -->
+<div id="q" class="pol">10.5</div> <!-- q-->
+<div id="qk" class="pol">10.5</div><!--  q и k -->
+<div id="qkv" class="pol">10.5</div><!--  вытачка на q -->
+<div id="qksh" class="pol">10.5</div><!--  вытачка на q ширина -->
+<div id="nizl" class="pol">10.5</div><!--  низ левый-->
+<div id="nizp" class="pol">10.5</div><!--  низ правый-->
+<div id="nizk" class="pol">10.5</div><!--  низ k-->
+
+		</div>
+
+
+		<div id="ubka">		
+	<img id="u" src="images/Untitled-2.jpg" style="width: 100%; height: auto"></img>
+
+		<div id="n1" class="pol"></div>
+ <div id="n2" class="pol"></div>
+ <div id="n3" class="pol"></div>
+ <div id="rast" class="pol"></div> 
+ <div id="k1" class="pol"></div>
+ <div id="k2" class="pol"></div> 
+<div id="k3" class="pol"></div>
+<div id="k4" class="pol"></div>
+<div id="m5d2z" class="pol"></div>
+<div id="vbn2" class="pol"></div>
+			
+		</div>
+
+
+
+	</div>
+
+
 
 			</div>
 		

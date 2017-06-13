@@ -1,4 +1,8 @@
 
+@media only screen and (max-width : 1370px){
+#sorry{
+	display: none;
+}
 
 #variables{
 	display: inline-block;
@@ -16,12 +20,25 @@
 
 
 #getFigure{
-	position: relative;
+	position: absolute;
 	display: inline-block;
-	width: 130px;
+	width: 420px;
+	height: 300px;
 }
-#getFigure p{
-	width: 100px;
+#getFigure div {
+	position: relative;
+	width: 130px;
+	height: auto;
+	display: inline-block;
+
+}
+
+#getFigure div img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	
 }
 #getM{
 	position: relative;
@@ -672,7 +689,7 @@
 .pol{
 	text-align: center;
 	position: absolute;
-	font-size: 1.5vw;
+	font-size: 1.4vw;
 	margin: 0 0 0 0;
 
 }
@@ -964,28 +981,203 @@
     left: 52.5vw;
     transform: rotate(270deg);
 }
+					/* рукав и юбка */
 
 
+#ruk {
+	position: relative;
+	width: 45%;
+	display: inline-block;
+	
+
+}
+#r {
+		margin:65px 0 50px 110px;
+}
+#u{
+		margin:50px 0 51px 225px;
+
+}
+#ubka {
+	position: relative;
+	width: 30%;
+	display: inline-block;
+}
 
 
+				/* рукав */
+
+#shkv{
+	bottom: 84.4vw;
+    left: 12vw;
+}
+
+#vok{
+    bottom: 72.5vw;
+    left: 5.8vw; 
+    transform: rotate(270deg);
+}
+
+#zk{
+	font-size: 1.2vw;
+    bottom: 84.4vw;
+    left: 49.3vw;
+
+}
 
 
+#o1{
+    bottom: 84.4vw;
+    left: 25vw;
+
+}
+
+#o2{
+    font-size: 1.2vw;
+    bottom: 61vw;
+    left: 9.7vw;
+   
+}
+
+#o3{
+    font-size: 1vw;
+    bottom: 63.4vw;
+    left: 12.8vw;
+    transform: rotate(270deg);
+}
 
 
+#o4{
+	font-size: 1vw;
+    bottom: 71.9vw;
+    left: 15.9vw;
+
+}
 
 
+#o5{
+	font-size: 1vw;
+    bottom: 80vw;
+    left: 34vw;
+}
+
+#o6{
+	font-size: 1vw;
+    bottom: 65.5vw;
+    left: 43vw;
+ 
+}
+#o7{
+	font-size: 1.3vw;
+    bottom: 75.5vw;
+    left: 33.5vw;
+    transform: rotate(46deg);
+}
+#o8{
+    bottom: 65.5vw;
+    left: 47.5vw;
+    transform: rotate(37deg);
+}
+
+#spu{
+    bottom: 48vw;
+    left: 28.5vw;
+    transform: rotate(270deg);
+}
+
+#spu2{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
+
+#bok{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
+
+#q{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
 
 
+#qk{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
 
 
+#qkv{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
 
 
+#qksh{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
 
 
+#nizl{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
 
-/* @media only screen and (max-width : 1144px) {
- # {
-  bottom: 32vw;
-  left: -1vw;
- }
-} */
+#nizp{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
+#nizk{
+    bottom: 14vw;
+    left: 52.5vw;
+    transform: rotate(270deg);
+}
+
+
+/* @media only screen and (max-width : 1364px) {
+#inputs {
+	display: none;
+}
+#sorry {
+	color: #575656;
+	display: block;
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	font-size: 25px;
+	font-family: Helvetica;
+	left: 25%;
+	top: 45%;
+}
+}
+
+
+@media only screen and (max-width : 640px) {
+#inputs {
+	display: none;
+}
+#sorry {
+	color: #575656;
+	display: block;
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	font-size: 15px;
+	font-family:Helvetica;
+	left: 25%;
+	top: 45%;
+	min-width: 133px;
+}
+}
+ */
+
+
