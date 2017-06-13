@@ -1086,59 +1086,57 @@
 }
 
 #spu2{
-    bottom: 14vw;
-    left: 52.5vw;
+    bottom: 20vw;
+    left: 28.5vw;
     transform: rotate(270deg);
 }
 
 #bok{
-    bottom: 14vw;
-    left: 52.5vw;
-    transform: rotate(270deg);
+	font-size: 1vw;
+	bottom: 35.5vw;
+    left: 10.5vw;
 }
 
 #q{
-    bottom: 14vw;
-    left: 52.5vw;
-    transform: rotate(270deg);
+    bottom: 35.5vw;
+    left: 19.1vw;
 }
 
 
 #qk{
-    bottom: 14vw;
-    left: 52.5vw;
-    transform: rotate(270deg);
+    bottom: 36vw;
+    left: 36.5vw;
+    transform: rotate(355deg);
 }
 
 
 #qkv{
-    bottom: 14vw;
-    left: 52.5vw;
-    transform: rotate(270deg);
+    bottom: 32.3vw;
+    left: 39.5vw;
 }
 
 
 #qksh{
-    bottom: 14vw;
-    left: 52.5vw;
+	font-size: 1.2vw;
+	bottom: 34.5vw;
+    left: 46.7vw;
     transform: rotate(270deg);
 }
 
 
 #nizl{
-    bottom: 14vw;
-    left: 52.5vw;
-    transform: rotate(270deg);
+    bottom: 6.5vw;
+    left: 19.5vw;
 }
 
 #nizp{
-    bottom: 14vw;
-    left: 52.5vw;
-    transform: rotate(270deg);
+    bottom: 6.5vw;
+    left: 34vw;
 }
 #nizk{
-    bottom: 14vw;
-    left: 52.5vw;
+	font-size: 1vw;
+    bottom: 4.3vw;
+    left: 41.7vw;
     transform: rotate(270deg);
 }
 
