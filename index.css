@@ -4,27 +4,40 @@
 	display: none;
 }
 
+
 #variables{
-	display: inline-block;
-	width: 150px;
+	position: relative;
+	width: 250px;
 	text-align: left;
 	margin: 20px 0 60px 70px;
 	height: 500px;
-	top: -10px;
+	top: 50px;
+	left: 450px;
+	display: inline-block;
+
 
 }
+
+#inputs2{
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	text-align: left;
+	top: 50px;
+	left: 450px;
+
+}
+
 
  #variables p{
 	width: 150px;
 	font-family: Helvetica;
-	margin: 14px 0 14px 0;
 }
 
 
  #inputs2 p {
 	width: 150px;
 	font-family: Helvetica;
-	margin: 14px 0 14px 0;
 }
 input{
 	font-family: Helvetica;
@@ -32,6 +45,23 @@ input{
 }
 #bt{
 	width: 100%;
+	display: none;
+}
+#bt2{
+	width: 100%;
+	display: block;
+}
+#bt3{
+	width: 100%;
+	display: none;
+}
+#bt4{
+	width: 100%;
+	display: none;
+}
+#bt5{
+	width: 100%;
+	display: none;
 }
 #get{
 	position: relative;
@@ -40,6 +70,37 @@ input{
 	padding: 10px 100px 10px 100px;
 
 }
+
+#get2{
+	position: relative;
+	left: 41.5%;
+	bottom:30px;
+	padding: 10px 100px 10px 100px;
+
+}
+#get3{
+	position: relative;
+	left: 41.5%;
+	bottom:30px;
+	padding: 10px 100px 10px 100px;
+
+}
+#get4{
+	position: relative;
+	left: 41.5%;
+	bottom:30px;
+	padding: 10px 100px 10px 100px;
+
+}
+
+#get5{
+	position: relative;
+	left: 41.5%;
+	bottom:30px;
+	padding: 10px 100px 10px 100px;
+
+}
+
 
 #c1{
 	margin: 5px 7px 0 0;
@@ -78,25 +139,17 @@ input[type="text"]{
 
 }
 
-#inputs2{
-	display: inline-block;
-	width: 150px;
-	text-align: left;
-	top: -10px;
-}
-
-
 #getFigure{
-	position: absolute;
-	display: inline-block;
-	width: 600px;
-	height: 300px;
+	position: relative;
+	width: 800px;
+	display: none;
+	height: 450px;
 	top: 36px;
-    left: 454px;
+    left: 31.5%;
 }
 #getFigure div {
 	position: relative;
-	width: 130px;
+	width: 150px;
 	height: auto;
 	margin: 10px 10px 0 10px;
 	display: inline-block;
@@ -112,70 +165,72 @@ input[type="text"]{
 }
 #getM{
 	position: relative;
-	display: inline-block;
+	display: none;
 	width: 130px;
+	height: 250px;
 	margin: 0 0 25px 0;
-	top: -41px;
-	left: 61px;
+	top: 109px;
+    left: 642px;
 }
 #getM p{
 	width: 100px;
 }
 #gSp{
 	position: relative;
-	display: inline-block;
+	display: none;
 	width: 150px;
-	left: 20px;
+	left: 622px;
+    bottom: -115px;
+	margin: 0;
 	
-}
-
-select{
-  padding: 7px;
-  border: 1.45px solid #CFCFCF;
-  border-radius: 7px;
-}
-#sooo{
-	position: absolute;
-	width: 700px;
-	top: 370px;
-    left: 391px;
-
 }
 
 #gSp p{
 	width: 100px;
 }
 #gHips {
-	position: absolute;
-	display: inline-block;
+	position: relative;
+	display: none;
 	width: 130px;
-    left: 1033px;
+	height: 600px;
+    left: 41.5%;
     top: 35px;
 
 }
-#gHips p{
-	width: 100px;
-}
+
 #gBalley {
 	position: relative;
-	display: inline-block;
+	display: none;
 	width: 150px;
-	    left: 40px;
+    left: 462px;
     bottom: 0px;
+    margin: 0;
 
 }
 
-#gBalley select{
-	padding-right: 42px;
-}
 #gAss {
 	position: relative;
-	display: inline-block;
+	display: none;
 	width: 130px;
-	left: 42px;
+	left: 816px;
+	bottom: 109px;
+	margin: 0;
 }
 #gAss p{
 	width: 100px;
+}
+#thanks{
+	position: relative;
+	text-align: center;
+	display: none;
+	width: 300px;
+	height: 100px;
+	font-size: 30px;
+	font-family: Helvetica;
+	font-weight: bold;
+	top: 28px;
+    left: 40%;
+
 }
 
 								/* вытачки */

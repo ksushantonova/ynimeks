@@ -627,8 +627,7 @@ function proyma(){
 
 /* Скрипт */
 
-var btn = document.getElementById("get");
-btn.onclick = main;
+
 
 function setValueVytochki(){
 	document.getElementById("v1p").innerHTML = Math.floor((v1p)*100)/100;
@@ -804,7 +803,74 @@ function setValueRukav(){
 }
 
 
+									// верстка
+
+var btn = document.getElementById("get");
+
+btn.addEventListener("click",  function(){
+	btn.style.display = "none";
+	document.getElementById("getM").style.display = "none";
+	document.getElementById("thanks").style.display = "block";
+	main;
+}
+ );
+
+
+
+
+
+
+var btn2 = document.getElementById("get2");
+btn2.onclick = function(){
+	btn2.style.display = "none";
+	document.getElementById("bt3").style.display = "block";
+	document.getElementById("variables").style.display = "none";
+	document.getElementById("inputs2").style.display = "none";
+	document.getElementById("getFigure").style.display = "block";
+
+
+};
+var btn3 = document.getElementById("get3");
+btn3.onclick = function(){
+	btn3.style.display = "none";
+	document.getElementById("bt4").style.display = "block";
+	document.getElementById("getFigure").style.display = "none";
+	document.getElementById("gHips").style.display = "block";
+
+};
+var btn4 = document.getElementById("get4");
+btn4.onclick = function(){
+	btn4.style.display = "none";
+	document.getElementById("bt5").style.display = "block";
+	document.getElementById("gHips").style.display = "none";
+	document.getElementById("gSp").style.display = "block";
+	document.getElementById("gBalley").style.display = "block";
+	document.getElementById("gAss").style.display = "block";
+};
+
+var btn5 = document.getElementById("get5");
+btn5.onclick = function(){
+	btn5.style.display = "none";
+	document.getElementById("bt").style.display = "block";
+	document.getElementById("gSp").style.display = "none";
+	document.getElementById("gBalley").style.display = "none";
+	document.getElementById("gAss").style.display = "none";
+	document.getElementById("getM").style.display = "block";
+};
+
+
+
+
+
+
+
+
+
+
 							      // финальная функция
+
+var btn = document.getElementById("get");
+btn.onclick = main;
 
 function main(){
 data = {
