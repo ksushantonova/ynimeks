@@ -727,7 +727,7 @@ document.getElementById("a1t1").innerHTML = Math.floor((a1t1)*100)/100;
 	document.getElementById("normap").innerHTML = Math.floor((normap)*100)/100;
 	document.getElementById("naklonp").innerHTML = Math.floor((naklonp)*100)/100;
 	document.getElementById("shgp2").innerHTML = Math.floor((shgp2)*100)/100;
-	document.getElementById("p4").innerHTML = Math.floor((p4)*100)/100;
+	document.getElementById("p4").innerHTML = "X - " + Math.floor((1.5 * kg)*100)/100 + "";
 	document.getElementById("pv1").innerHTML = pv1;
 	document.getElementById("polmg").innerHTML = Math.floor((polmg)*100)/100;
 	document.getElementById("normanp").innerHTML = Math.floor((normanp)*100)/100;
@@ -748,7 +748,7 @@ document.getElementById("a1t1").innerHTML = Math.floor((a1t1)*100)/100;
 	document.getElementById("dv").innerHTML = Math.floor((dv)*100)/100;
 	document.getElementById("shv").innerHTML = Math.floor((shv)*100)/100;
 	document.getElementById("vk").innerHTML = Math.floor((vk)*100)/100;
-	
+	document.getElementById("x1").innerHTML = "X";
 
 }
 
@@ -799,6 +799,7 @@ function setValueRukav(){
 	document.getElementById("nizl").innerHTML = Math.floor((nizl)*100)/100;
 	document.getElementById("nizp").innerHTML = Math.floor((nizp)*100)/100;
 	document.getElementById("nizk").innerHTML = Math.floor((nizk)*100)/100;
+		document.getElementById("R").innerHTML = Math.floor(((2 * data.ot)/(2 * 3.14))*100)/100;
 
 }
 

@@ -863,6 +863,11 @@
     bottom: 29.5vw;
     left: 9vw;
 	transform: rotate(270deg);
+}
+#x1 {
+    bottom: 39.5vw;
+    left: 9.5vw;
+	transform: rotate(270deg);
 }	
 
 						/* соединение */
@@ -1140,6 +1145,12 @@
     left: 41.7vw;
     transform: rotate(270deg);
 }
+#R {
+    bottom: 27.8vw;
+    left: 43.7vw;
+    transform: rotate(270deg);
+}
+
 
 
 /* @media only screen and (max-width : 1364px) {
