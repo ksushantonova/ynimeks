@@ -6,29 +6,99 @@
 
 #variables{
 	display: inline-block;
-	margin-bottom: 50px;
-	width: 250px;
+	width: 150px;
 	text-align: left;
+	margin: 20px 0 60px 70px;
+	height: 500px;
+	top: -10px;
+
+}
+
+ #variables p{
+	width: 150px;
+	font-family: Helvetica;
+	margin: 14px 0 14px 0;
+}
+
+
+ #inputs2 p {
+	width: 150px;
+	font-family: Helvetica;
+	margin: 14px 0 14px 0;
+}
+input{
+	font-family: Helvetica;
+
+}
+#bt{
+	width: 100%;
+}
+#get{
+	position: relative;
+	left: 40%;
+	bottom:30px;
+	padding: 10px 100px 10px 100px;
+
+}
+
+#c1{
+	margin: 5px 7px 0 0;
+	padding: 5px 24px 5px 24px;
+	border-radius: 5px;
+}
+#c2{
+	margin: 5px 7px 0 0;
+	padding: 5px 24px 5px 24px;
+	border-radius: 5px;
+}
+#c3{
+	margin: 5px 7px 0 0;
+	padding: 5px 24px 5px 24px;
+	border-radius: 5px;
+}
+#c4{
+	margin: 5px 7px 0 0;
+	padding: 5px 24px 5px 24px;
+	border-radius: 5px;
+}
+
+
+
+#pp{
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+
+
+input[type="text"]{
+  color: black;
+  border: 1.45px solid #CFCFCF;
+  border-radius: 5px;
+
 }
 
 #inputs2{
 	display: inline-block;
-	margin-bottom: 50px;
-	width: 200px;
+	width: 150px;
 	text-align: left;
+	top: -10px;
 }
 
 
 #getFigure{
 	position: absolute;
 	display: inline-block;
-	width: 420px;
+	width: 600px;
 	height: 300px;
+	top: 36px;
+    left: 454px;
 }
 #getFigure div {
 	position: relative;
 	width: 130px;
 	height: auto;
+	margin: 10px 10px 0 10px;
 	display: inline-block;
 
 }
@@ -44,6 +114,9 @@
 	position: relative;
 	display: inline-block;
 	width: 130px;
+	margin: 0 0 25px 0;
+	top: -41px;
+	left: 61px;
 }
 #getM p{
 	width: 100px;
@@ -51,9 +124,24 @@
 #gSp{
 	position: relative;
 	display: inline-block;
-	width: 160px;
+	width: 150px;
+	left: 20px;
 	
 }
+
+select{
+  padding: 7px;
+  border: 1.45px solid #CFCFCF;
+  border-radius: 7px;
+}
+#sooo{
+	position: absolute;
+	width: 700px;
+	top: 370px;
+    left: 391px;
+
+}
+
 #gSp p{
 	width: 100px;
 }
@@ -61,7 +149,9 @@
 	position: absolute;
 	display: inline-block;
 	width: 130px;
-	left: 1023px;
+    left: 1033px;
+    top: 35px;
+
 }
 #gHips p{
 	width: 100px;
@@ -69,15 +159,20 @@
 #gBalley {
 	position: relative;
 	display: inline-block;
-	width: 130px;
+	width: 150px;
+	    left: 40px;
+    bottom: 0px;
+
 }
-#gBalley p{
-	width: 100px;
+
+#gBalley select{
+	padding-right: 42px;
 }
 #gAss {
 	position: relative;
 	display: inline-block;
 	width: 130px;
+	left: 42px;
 }
 #gAss p{
 	width: 100px;
