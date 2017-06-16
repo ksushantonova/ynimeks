@@ -824,6 +824,7 @@ var btn2 = document.getElementById("get2");
 btn2.onclick = function(){
 	btn2.style.display = "none";
 	document.getElementById("bt3").style.display = "block";
+	btn3.style.display = "block";
 	document.getElementById("variables").style.display = "none";
 	document.getElementById("inputs2").style.display = "none";
 	document.getElementById("getFigure").style.display = "block";
@@ -834,6 +835,7 @@ var btn3 = document.getElementById("get3");
 btn3.onclick = function(){
 	btn3.style.display = "none";
 	document.getElementById("bt4").style.display = "block";
+	btn4.style.display = "block";
 	document.getElementById("getFigure").style.display = "none";
 	document.getElementById("gHips").style.display = "block";
 
@@ -842,6 +844,7 @@ var btn4 = document.getElementById("get4");
 btn4.onclick = function(){
 	btn4.style.display = "none";
 	document.getElementById("bt5").style.display = "block";
+	btn5.style.display = "block";
 	document.getElementById("gHips").style.display = "none";
 	document.getElementById("gSp").style.display = "block";
 	document.getElementById("gBalley").style.display = "block";
@@ -852,10 +855,20 @@ var btn5 = document.getElementById("get5");
 btn5.onclick = function(){
 	btn5.style.display = "none";
 	document.getElementById("bt").style.display = "block";
+	btn.style.display = "block";
 	document.getElementById("gSp").style.display = "none";
 	document.getElementById("gBalley").style.display = "none";
 	document.getElementById("gAss").style.display = "none";
 	document.getElementById("getM").style.display = "block";
+	document.getElementById("bt6").style.display = "block";
+};
+
+var btn6 = document.getElementById("get6");
+btn6.onclick = function(){
+	document.getElementById("thanks").style.display = "none";
+	btn2.style.display = "block";
+	document.getElementById("variables").style.display = "inline-block";
+	document.getElementById("inputs2").style.display = "inline-block";
 };
 
 

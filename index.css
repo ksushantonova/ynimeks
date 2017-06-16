@@ -14,6 +14,7 @@
 	top: 50px;
 	left: 450px;
 	display: inline-block;
+	color: #4B4B4B;
 
 
 }
@@ -25,6 +26,7 @@
 	text-align: left;
 	top: 50px;
 	left: 450px;
+	color: #4B4B4B;
 
 }
 
@@ -63,11 +65,19 @@ input{
 	width: 100%;
 	display: none;
 }
+#bt6{
+	width: 100%;
+	display: none;
+height: 100px;
+}
 #get{
 	position: relative;
 	left: 40%;
 	bottom:30px;
 	padding: 10px 100px 10px 100px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #4B4B4B;
 
 }
 
@@ -76,6 +86,9 @@ input{
 	left: 41.5%;
 	bottom:30px;
 	padding: 10px 100px 10px 100px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #4B4B4B;
 
 }
 #get3{
@@ -83,6 +96,9 @@ input{
 	left: 41.5%;
 	bottom:30px;
 	padding: 10px 100px 10px 100px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #4B4B4B;
 
 }
 #get4{
@@ -90,6 +106,9 @@ input{
 	left: 41.5%;
 	bottom:30px;
 	padding: 10px 100px 10px 100px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #4B4B4B;
 
 }
 
@@ -98,6 +117,19 @@ input{
 	left: 41.5%;
 	bottom:30px;
 	padding: 10px 100px 10px 100px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #4B4B4B;
+
+}
+#get6{
+	position: relative;
+	left: 34%;
+    bottom: -27%;
+	padding: 10px 100px 10px 100px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #4B4B4B;
 
 }
 
@@ -146,6 +178,7 @@ input[type="text"]{
 	height: 450px;
 	top: 36px;
     left: 31.5%;
+    color: #4B4B4B;
 }
 #getFigure div {
 	position: relative;
@@ -171,6 +204,7 @@ input[type="text"]{
 	margin: 0 0 25px 0;
 	top: 109px;
     left: 642px;
+    color: #4B4B4B;
 }
 #getM p{
 	width: 100px;
@@ -182,7 +216,7 @@ input[type="text"]{
 	left: 622px;
     bottom: -115px;
 	margin: 0;
-	
+	color: #4B4B4B;
 }
 
 #gSp p{
@@ -195,6 +229,7 @@ input[type="text"]{
 	height: 600px;
     left: 41.5%;
     top: 35px;
+    color: #4B4B4B;
 
 }
 
@@ -205,6 +240,7 @@ input[type="text"]{
     left: 462px;
     bottom: 0px;
     margin: 0;
+    color: #4B4B4B;
 
 }
 
@@ -215,6 +251,7 @@ input[type="text"]{
 	left: 816px;
 	bottom: 109px;
 	margin: 0;
+	color: #4B4B4B;
 }
 #gAss p{
 	width: 100px;
@@ -225,10 +262,10 @@ input[type="text"]{
 	display: none;
 	width: 300px;
 	height: 100px;
-	font-size: 30px;
+	font-size: 27px;
 	font-family: Helvetica;
 	font-weight: bold;
-	top: 28px;
+	top: 32px;
     left: 40%;
 
 }
@@ -1303,7 +1340,7 @@ input[type="text"]{
 
 
 
-/* @media only screen and (max-width : 1364px) {
+@media only screen and (max-width : 1364px) {
 #inputs {
 	display: none;
 }
@@ -1338,6 +1375,6 @@ input[type="text"]{
 	min-width: 133px;
 }
 }
- */
+
 
 
