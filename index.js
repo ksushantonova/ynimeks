@@ -805,12 +805,30 @@ function setValueRukav(){
 
 									// верстка
 
+var zapros, zapros2;
+function getZapros(){
+    var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+
+var xhr = new XHR();
+    xhr.open('GET', 'https://query.yahooapis.com/v1/public/yql?q=select+*+from+yahoo.finance.xchange+where+pair+=+%22USDUAH,EURUAH,USDEUR%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=', false);
+    xhr.onreadystatechange = function () {
+        if(xhr.readyState === 4) {
+           zapros = JSON.parse(xhr.responseText).query.results.rate["0"].Ask;
+           zapros2 = JSON.parse(xhr.responseText).query.results.rate["0"].Bid;
+           document.getElementById("kurs").innerHTML = "USD:&nbsp&nbsp" + Math.floor((zapros2)*100)/100 + "&nbsp&nbsp" + Math.floor((zapros)*100)/100 + "";
+        }
+    };
+    xhr.send();
+}
+
 var btn = document.getElementById("get");
 
 btn.addEventListener("click",  function(){
 	btn.style.display = "none";
 	document.getElementById("getM").style.display = "none";
 	document.getElementById("thanks").style.display = "block";
+	document.getElementById("kurs").style.display = "block";
+	 getZapros();
 	main;
 }
  );
@@ -944,4 +962,3 @@ getFigure();
       setValueRukav();
 };
 
-// поправить штуку с x на построении полочки и спинки
