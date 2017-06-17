@@ -831,9 +831,10 @@ $( document ).ready(function (){
 
 	$("#getM").fadeOut(function(){
 	$("#thanks").fadeIn();
-	$("#kurs").fadeIn();
+	// $("#kurs").fadeIn();
 	$(".black").fadeIn();
 
+document.getElementById("kurs").style.display = "block";
 
 document.getElementById("shtany1").style.display = "inline-block";
 document.getElementById("shtany2").style.display = "inline-block";
@@ -868,6 +869,7 @@ btn2.onclick = function(){
 	btn3.style.display = "block";
 $("#variables").fadeOut(function(){
 	$("#getFigure").fadeIn();
+	$("#bt3").fadeIn();
 });
 $("#inputs2").fadeOut();
 
@@ -886,6 +888,9 @@ btn3.onclick = function(){
 
 $("#getFigure").fadeOut(function(){
 	$("#gHips").fadeIn();
+	$("#bt4").fadeIn();
+	
+
 
 });
 	// document.getElementById("getFigure").style.display = "none";
@@ -903,6 +908,7 @@ $("#gHips").fadeOut(function(){
 	$("#gSp").fadeIn();
 		$("#gBalley").fadeIn();
 			$("#gAss").fadeIn();
+			$("#bt5").fadeIn();
 
 });
 
