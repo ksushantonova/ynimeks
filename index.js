@@ -825,11 +825,34 @@ var btn = document.getElementById("get");
 
 btn.addEventListener("click",  function(){
 	btn.style.display = "none";
-	document.getElementById("getM").style.display = "none";
-	document.getElementById("thanks").style.display = "block";
-	document.getElementById("kurs").style.display = "block";
+	
+$( document ).ready(function (){
+
+
+	$("#getM").fadeOut(function(){
+	$("#thanks").fadeIn();
+	$("#kurs").fadeIn();
+	$(".black").fadeIn();
+
+
+document.getElementById("shtany1").style.display = "inline-block";
+document.getElementById("shtany2").style.display = "inline-block";
+document.getElementById("vytochkii").style.display = "block";
+document.getElementById("polochkaa").style.display = "block";
+document.getElementById("polvytachki").style.display = "block";
+document.getElementById("rukav").style.display = "block";
+document.getElementById("bt6").style.display = "block";
+
+
+
+	});
+	// document.getElementById("getM").style.display = "none";
+	// document.getElementById("thanks").style.display = "block";
+	// document.getElementById("kurs").style.display = "block";
 	 getZapros();
 	main;
+})
+
 }
  );
 
@@ -843,9 +866,15 @@ btn2.onclick = function(){
 	btn2.style.display = "none";
 	document.getElementById("bt3").style.display = "block";
 	btn3.style.display = "block";
-	document.getElementById("variables").style.display = "none";
-	document.getElementById("inputs2").style.display = "none";
-	document.getElementById("getFigure").style.display = "block";
+$("#variables").fadeOut(function(){
+	$("#getFigure").fadeIn();
+});
+$("#inputs2").fadeOut();
+
+
+	// document.getElementById("variables").style.display = "none";
+	// document.getElementById("inputs2").style.display = "none";
+	// document.getElementById("getFigure").style.display = "block";
 
 
 };
@@ -854,8 +883,13 @@ btn3.onclick = function(){
 	btn3.style.display = "none";
 	document.getElementById("bt4").style.display = "block";
 	btn4.style.display = "block";
-	document.getElementById("getFigure").style.display = "none";
-	document.getElementById("gHips").style.display = "block";
+
+$("#getFigure").fadeOut(function(){
+	$("#gHips").fadeIn();
+
+});
+	// document.getElementById("getFigure").style.display = "none";
+	// document.getElementById("gHips").style.display = "block";
 
 };
 var btn4 = document.getElementById("get4");
@@ -863,22 +897,42 @@ btn4.onclick = function(){
 	btn4.style.display = "none";
 	document.getElementById("bt5").style.display = "block";
 	btn5.style.display = "block";
-	document.getElementById("gHips").style.display = "none";
-	document.getElementById("gSp").style.display = "block";
-	document.getElementById("gBalley").style.display = "block";
-	document.getElementById("gAss").style.display = "block";
+
+
+$("#gHips").fadeOut(function(){
+	$("#gSp").fadeIn();
+		$("#gBalley").fadeIn();
+			$("#gAss").fadeIn();
+
+});
+
+	// document.getElementById("gHips").style.display = "none";
+	// document.getElementById("gSp").style.display = "block";
+	// document.getElementById("gBalley").style.display = "block";
+	// document.getElementById("gAss").style.display = "block";
 };
 
 var btn5 = document.getElementById("get5");
 btn5.onclick = function(){
 	btn5.style.display = "none";
-	document.getElementById("bt").style.display = "block";
 	btn.style.display = "block";
-	document.getElementById("gSp").style.display = "none";
-	document.getElementById("gBalley").style.display = "none";
-	document.getElementById("gAss").style.display = "none";
-	document.getElementById("getM").style.display = "block";
-	document.getElementById("bt6").style.display = "block";
+
+
+
+$("#gBalley").fadeOut();
+$("#gAss").fadeOut();
+$("#gSp").fadeOut(function(){
+	$("#getM").fadeIn();
+	$("#bt").fadeIn();
+
+
+});
+
+	// document.getElementById("gSp").style.display = "none";
+	// document.getElementById("gBalley").style.display = "none";
+	// document.getElementById("gAss").style.display = "none";
+	// document.getElementById("getM").style.display = "block";
+
 };
 
 var btn6 = document.getElementById("get6");
@@ -887,6 +941,7 @@ btn6.onclick = function(){
 	btn2.style.display = "block";
 	document.getElementById("variables").style.display = "inline-block";
 	document.getElementById("inputs2").style.display = "inline-block";
+	document.getElementById("kurs").style.display = "none";
 };
 
 

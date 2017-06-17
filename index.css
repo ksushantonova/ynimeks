@@ -30,7 +30,6 @@
 
 }
 
-
  #variables p{
 	width: 150px;
 	font-family: Helvetica;
@@ -294,6 +293,7 @@ input[type="text"]{
 
 }
 #vytochkii{
+	display: none;
 	margin: 70px 0 50px 0;
 }
 #v1p{
@@ -495,7 +495,7 @@ input[type="text"]{
 #shtany1 {
 	position: relative;
 	width: 45%;
-	display: inline-block;
+	display: none;
 
 	
 
@@ -512,7 +512,7 @@ input[type="text"]{
 }
 #shtany2 {
 	position: relative;
-	display: inline-block;
+	display: none;
 	width: 49%;
 	
 
@@ -522,6 +522,7 @@ input[type="text"]{
 	width: 100%;
 	height: 3px;
 	background: black;
+	display: none;
 }
 
 									/* передняя */
@@ -859,6 +860,7 @@ input[type="text"]{
 
 #polochkaa{
 	width: 100%;
+	display: none;
 }
 #polochka1 {
 	position: relative;
@@ -1077,6 +1079,9 @@ input[type="text"]{
 
 						/* соединение */
 
+#polvytachki{
+	display: none;
+}
 #per {
 	position: relative;
 	width: 36%;
@@ -1194,7 +1199,9 @@ input[type="text"]{
 }
 					/* рукав и юбка */
 
-
+#rukav{
+	display:none;
+}
 #ruk {
 	position: relative;
 	width: 45%;
