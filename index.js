@@ -32,7 +32,7 @@ var ot = document.getElementById("Ot"),
 
 //пофиксить баг с дефолт-датой
 var data;
-
+var co;
 
 var Np; 
 
@@ -163,22 +163,27 @@ function defaultData(){
 }
 
 
+
 function verifyAll(){
 	var result;
    if (otr > data.ot){
    	result = otr - data.ot;
    	if (result > 4){
-   		alert("Подкорректируйте мерки!");
+   			co = true;
    	} else {
    		data.m3 = data.m3 + (result/6);
 		data.m5 = data.m5 + (result/6);
 		data.m7 = data.m7 + (result/6);
+		co = false;
+
    	}
    } else {
    		result = data.ot - otr;
    	 if(result > 4){
-   	 	alert("Подкорректируйте мерки!");
+   	 	co = true;
+
    	 } else {
+   	 		co = false;
    	 	data.m3 = data.m3 - (result/6);
 		data.m5 = data.m5 - (result/6);
 		data.m7 = data.m7 - (result/6);
@@ -810,7 +815,7 @@ function getZapros(){
     var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
 var xhr = new XHR();
-    xhr.open('GET', 'https://query.yahooapis.com/v1/public/yql?q=select+*+from+yahoo.finance.xchange+where+pair+=+%22USDUAH,EURUAH,USDEUR%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=', false);
+    xhr.open('GET', 'https://query.yahooapis.com/v1/public/yql?q=select+*+from+yahoo.finance.xchange+where+pair+=+%22USDUAH,EURUAH,USDEUR%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=', true);
     xhr.onreadystatechange = function () {
         if(xhr.readyState === 4) {
            zapros = JSON.parse(xhr.responseText).query.results.rate["0"].Ask;
@@ -845,13 +850,13 @@ document.getElementById("rukav").style.display = "block";
 document.getElementById("bt6").style.display = "block";
 
 
-
 	});
 	// document.getElementById("getM").style.display = "none";
 	// document.getElementById("thanks").style.display = "block";
 	// document.getElementById("kurs").style.display = "block";
 	 getZapros();
 	main;
+
 })
 
 }
@@ -866,10 +871,16 @@ var btn2 = document.getElementById("get2");
 btn2.onclick = function(){
 	btn2.style.display = "none";
 	document.getElementById("bt3").style.display = "block";
+	// document.getElementById("mer1").style.display = "none";
+	// document.getElementById("mer2").style.display = "none";
+	document.getElementById("helps").style.display = "none";
 	btn3.style.display = "block";
 $("#variables").fadeOut(function(){
+	$("#mer2").fadeOut();
+	$("#mer1").fadeOut();
 	$("#getFigure").fadeIn();
 	$("#bt3").fadeIn();
+
 });
 $("#inputs2").fadeOut();
 
@@ -948,6 +959,21 @@ btn6.onclick = function(){
 	document.getElementById("variables").style.display = "inline-block";
 	document.getElementById("inputs2").style.display = "inline-block";
 	document.getElementById("kurs").style.display = "none";
+	document.getElementById("corr").style.display = "none";
+	document.getElementById("mer1").style.display = "block";
+	document.getElementById("mer2").style.display = "block";
+
+};
+
+function noVal(){
+	      if (co){
+	var aaa = setTimeout(function(){
+		$("#corr").fadeIn(500)
+	},700);
+} else if (co == false){
+	$("#corr").fadeOut();
+}
+
 };
 
 
@@ -960,6 +986,25 @@ btn6.onclick = function(){
 
 
 							      // финальная функция
+
+var cod = document.getElementById("corr");
+cod.onclick = function(){
+	document.getElementById("thanks").style.display = "none";
+	btn2.style.display = "block";
+	cod.style.display = "none";
+	document.getElementById("variables").style.display = "inline-block";
+	document.getElementById("inputs2").style.display = "inline-block";
+	document.getElementById("kurs").style.display = "none";
+	document.getElementById("mer1").style.display = "block";
+	document.getElementById("mer2").style.display = "block";
+
+};
+
+var helps = document.getElementById("helps");
+helps.onclick = function(){
+	$("#mer1").fadeIn();
+	$("#mer2").fadeIn();
+};
 
 var btn = document.getElementById("get");
 btn.onclick = main;
@@ -1021,5 +1066,8 @@ getFigure();
       getRukav();
       proyma();
       setValueRukav();
+      noVal();
+
+
 };
 
