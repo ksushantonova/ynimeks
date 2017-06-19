@@ -24,6 +24,7 @@ display: none;
 font-size: 12.5px;
 margin: 35px 30px 30px 50px;
 }
+
 #mer2{
 text-align: justify;
 color: #727272;
@@ -345,13 +346,13 @@ input[type="text"]{
 	position: relative;
 	text-align: center;
 	display: none;
-	width: 300px;
+	width: 200px;
 	height: 50px;
 	font-size: 19px;
 	font-family: Helvetica;
 	font-weight: bold;
-    top: -13px;
-    left: 80%;
+    top: -31px;
+    left: 85%;
     margin: 0 0 0 0;
 
 }
