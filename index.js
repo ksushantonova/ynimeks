@@ -870,14 +870,14 @@ document.getElementById("bt6").style.display = "block";
 var btn2 = document.getElementById("get2");
 btn2.onclick = function(){
 	btn2.style.display = "none";
+	$("#mer2").fadeOut();
+	$("#mer1").fadeOut();
 	document.getElementById("bt3").style.display = "block";
 	// document.getElementById("mer1").style.display = "none";
 	// document.getElementById("mer2").style.display = "none";
 	document.getElementById("helps").style.display = "none";
 	btn3.style.display = "block";
 $("#variables").fadeOut(function(){
-	$("#mer2").fadeOut();
-	$("#mer1").fadeOut();
 	$("#getFigure").fadeIn();
 	$("#bt3").fadeIn();
 
