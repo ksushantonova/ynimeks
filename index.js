@@ -836,6 +836,7 @@ $( document ).ready(function (){
 
 	$("#getM").fadeOut(function(){
 	$("#thanks").fadeIn();
+	$("#guide").fadeIn();
 	// $("#kurs").fadeIn();
 	$(".black").fadeIn();
 
@@ -960,8 +961,10 @@ btn6.onclick = function(){
 	document.getElementById("inputs2").style.display = "inline-block";
 	document.getElementById("kurs").style.display = "none";
 	document.getElementById("corr").style.display = "none";
-	document.getElementById("mer1").style.display = "block";
-	document.getElementById("mer2").style.display = "block";
+	document.getElementById("helps").style.display = "block";
+	document.getElementById("guide").style.display = "none";
+
+
 
 };
 
@@ -995,8 +998,9 @@ cod.onclick = function(){
 	document.getElementById("variables").style.display = "inline-block";
 	document.getElementById("inputs2").style.display = "inline-block";
 	document.getElementById("kurs").style.display = "none";
-	document.getElementById("mer1").style.display = "block";
-	document.getElementById("mer2").style.display = "block";
+	document.getElementById("helps").style.display = "block";
+	document.getElementById("guide").style.display = "none";
+
 
 };
 
@@ -1008,6 +1012,12 @@ helps.onclick = function(){
 
 var btn = document.getElementById("get");
 btn.onclick = main;
+
+
+
+setTimeout(function (){
+	document.getElementById("helps").style.color = "#898989";
+}, 10000);
 
 function main(){
 data = {
