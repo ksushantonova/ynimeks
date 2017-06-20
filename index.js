@@ -1,6 +1,41 @@
 
 /* Инпуты */
 
+
+
+
+var el = document.getElementsByTagName("input");
+for (var i = 0; i < el.length; i++){
+	el[i].onkeypress = function(e) {
+  e = e || event;
+
+  if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+  var chr = getChar(e);
+
+  if (chr == null) return;
+
+  if (chr < '0' || chr > '9') {
+    return false;
+  }
+}
+}
+ function getChar(event) {
+      if (event.which == null) {
+        if (event.keyCode < 32) return null;
+        return String.fromCharCode(event.keyCode)
+      }
+
+      if (event.which != 0 && event.charCode != 0) {
+        if (event.which < 32) return null;
+        return String.fromCharCode(event.which) 
+      }
+
+      return null; 
+    }
+
+
+
 var ot = document.getElementById("Ot"),
  ob = document.getElementById("Ob"),
  m3 = document.getElementById("m3"),
@@ -830,6 +865,7 @@ var btn = document.getElementById("get");
 
 btn.addEventListener("click",  function(){
 	btn.style.display = "none";
+	document.getElementById("mist").style.display = "none";
 	
 $( document ).ready(function (){
 
@@ -849,6 +885,8 @@ document.getElementById("polochkaa").style.display = "block";
 document.getElementById("polvytachki").style.display = "block";
 document.getElementById("rukav").style.display = "block";
 document.getElementById("bt6").style.display = "block";
+
+
 
 
 	});
@@ -882,6 +920,7 @@ $("#variables").fadeOut(function(){
 	$("#getFigure").fadeIn();
 	$("#bt3").fadeIn();
 
+
 });
 $("#inputs2").fadeOut();
 
@@ -901,6 +940,7 @@ btn3.onclick = function(){
 $("#getFigure").fadeOut(function(){
 	$("#gHips").fadeIn();
 	$("#bt4").fadeIn();
+
 	
 
 
@@ -933,7 +973,8 @@ $("#gHips").fadeOut(function(){
 var btn5 = document.getElementById("get5");
 btn5.onclick = function(){
 	btn5.style.display = "none";
-	btn.style.display = "block";
+
+
 
 
 
@@ -941,7 +982,10 @@ $("#gBalley").fadeOut();
 $("#gAss").fadeOut();
 $("#gSp").fadeOut(function(){
 	$("#getM").fadeIn();
-	$("#bt").fadeIn();
+	$("#mist").fadeIn();
+			$("#bt").fadeIn();
+	btn.style.display = "block";
+
 
 
 });
@@ -1004,8 +1048,22 @@ cod.onclick = function(){
 
 };
 
+var mistak = document.getElementById("mist");
+mistak.onclick = function(){
+	document.getElementById("getM").style.display = "none";
+	btn2.style.display = "block";
+	mistak.style.display = "none";
+	document.getElementById("variables").style.display = "inline-block";
+	document.getElementById("inputs2").style.display = "inline-block";
+	btn.style.display = "none";
+	document.getElementById("helps").style.display = "block";
+
+
+};
+
 var helps = document.getElementById("helps");
 helps.onclick = function(){
+	helps.style.display = "none";
 	$("#mer1").fadeIn();
 	$("#mer2").fadeIn();
 };
@@ -1016,8 +1074,12 @@ btn.onclick = main;
 
 
 setTimeout(function (){
-	document.getElementById("helps").style.color = "#898989";
+	document.getElementById("helps").style.color = "#B1B1B1";
 }, 10000);
+
+
+
+
 
 function main(){
 data = {

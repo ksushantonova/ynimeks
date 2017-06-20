@@ -72,6 +72,20 @@ top: 0px;
 	cursor: pointer;
 
 }
+#mist{
+	position: absolute;
+    top: 296px;
+    left: 604px;
+	display: none;
+	color: #B1B1B1;
+	width: 300px;
+	height: 50px;
+	font-family: Helvetica;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+
+}
 #corr a{
 	color: red;
 	text-decoration: none;
@@ -149,7 +163,6 @@ height: 100px;
 	font-size: 15px;
 	font-weight: bold;
 	color: #4B4B4B;
-
 }
 
 #get2{
@@ -197,6 +210,16 @@ height: 100px;
 	position: relative;
 	left: 34%;
     bottom: -33%;
+	padding: 10px 100px 10px 100px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #4B4B4B;
+
+}
+#get7{
+	position: relative;
+	left: 34%;
+    bottom: -40%;
 	padding: 10px 100px 10px 100px;
 	font-size: 15px;
 	font-weight: bold;
@@ -271,8 +294,8 @@ input[type="text"]{
 	position: relative;
 	display: none;
 	width: 130px;
-	height: 250px;
-	margin: 0 0 25px 0;
+	height: 180px;
+	margin: 0 0 95px 0;
 	top: 109px;
     left: 642px;
     color: #4B4B4B;
@@ -586,14 +609,15 @@ input[type="text"]{
 	width: 45%;
 	display: none;
 
-	
-
 }
 #p {	
 	position: relative;
 		margin:50px 0 50px 20px;
 		top: 0px;
 	    	left: 0px;
+	    	width: 100%;
+	    	height: auto;
+	    	font-size:0px;
 }
 #z{
 		margin:50px 0 51px 55px;

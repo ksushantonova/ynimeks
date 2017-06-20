@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Unimeks</title>
-	<link rel="stylesheet" href="index.css">
+	
 	  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -13,6 +15,7 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
 <a name="top"></a>
@@ -49,6 +52,7 @@
 
 </div>
 <div id="helps">Я НЕ ПОНИМАЮ</div>
+<div id="mist">ИЛИ НАЧАТЬ ЗАНОВО</div>
 
 		<div id="variables" class="form-group">
 
@@ -149,12 +153,12 @@
  <label><input type="radio" name="M">Мужчина</label></br> 
  <label><input type="radio"  name="M"  checked>Женщина</label></br> 
 	  	</div>
-
+<div id="mist">ИЛИ НАЧАТЬ ЗАНОВО</div>
 	  	<div id="thanks">ГОТОВО, ЗАБИРАЙ</div>
 	  	<div id="kurs"></div>
 	  	<div id="guide"><span>ЭТО ВАЖНО:</span> МЕРКИ Х И Q СНИМАЮТСЯ ЛИНЕЙКОЙ С ГОТОВЫХ ЛЕКАЛ</div>
 
-	<div id="bt"><button type="button" class="btn btn-secondary btn-lg" id="get">РАСЧИТАТЬ</button></div>
+	<div id="bt"><button type="button" class="btn btn-secondary btn-lg" id="get">РАССЧИТАТЬ</button></div>
 	<div id="corr"><a id="corr2">НУЖНО ПОДКОРРЕКТИРОВАТЬ</a></div>
 
 	<div id="bt2"><button type="button" class="btn btn-secondary btn-lg" id="get2">ДАЛЕЕ</button></div>
@@ -167,11 +171,14 @@
 
 
 	<div class="black"></div>
+
+
 							
 				<div >							
-				<div id="shtany1">
+				<div id="shtany1" >
 
-				<img id="p" src="images/perednyaya.jpg" style="width: 100%; height: auto;"></img>
+
+				<div><img id="p" src="./images/perednyaya.jpg"></img></div>
 					
 				<div id="vep"></div> <!--верх передней -->
 				<div id="vsp"></div> <!--высота сид передней -->
@@ -384,17 +391,12 @@
 <div id = "bt6"> 
 <button id="get6"  type="button" class="btn btn-secondary btn-lg">
 <a href="#top" style="text-decoration: none; color: #4E4E4E;">ПОДКОРРЕКТИРОВАТЬ МЕРКИ</a></button>
+
+
 </div>
 
 			</div>
 		
-
-
-
-
-		<div id="footer"></div>
-
-
-	<script src="index.js"></script>
+		<script src="index.js"></script>
 </body>
 </html>
