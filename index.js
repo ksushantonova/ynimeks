@@ -2,6 +2,14 @@
 /* Инпуты */
 
 
+       function saveImg(){
+                html2canvas($("body"), {
+                    onrendered: function(canvas) {
+                    		 canvas.toBlob(function(blob) {
+   							 saveAs(blob ,"lekala.png");
+							}, "image/png");   
+                        }
+                   }) };
 
 
 var el = document.getElementsByTagName("input");
@@ -911,16 +919,15 @@ btn2.onclick = function(){
 	btn2.style.display = "none";
 	$("#mer2").fadeOut();
 	$("#mer1").fadeOut();
-	document.getElementById("bt3").style.display = "block";
+	$("#save").fadeOut();
+	$("#myname").fadeOut();
 	// document.getElementById("mer1").style.display = "none";
 	// document.getElementById("mer2").style.display = "none";
 	document.getElementById("helps").style.display = "none";
-	btn3.style.display = "block";
 $("#variables").fadeOut(function(){
 	$("#getFigure").fadeIn();
-	$("#bt3").fadeIn();
-
-
+		$("#bt3").fadeIn();
+	btn3.style.display = "block";
 });
 $("#inputs2").fadeOut();
 
@@ -931,18 +938,14 @@ $("#inputs2").fadeOut();
 
 
 };
+
 var btn3 = document.getElementById("get3");
 btn3.onclick = function(){
 	btn3.style.display = "none";
-	document.getElementById("bt4").style.display = "block";
-	btn4.style.display = "block";
-
 $("#getFigure").fadeOut(function(){
 	$("#gHips").fadeIn();
 	$("#bt4").fadeIn();
-
-	
-
+		btn4.style.display = "block";
 
 });
 	// document.getElementById("getFigure").style.display = "none";
@@ -952,8 +955,8 @@ $("#getFigure").fadeOut(function(){
 var btn4 = document.getElementById("get4");
 btn4.onclick = function(){
 	btn4.style.display = "none";
-	document.getElementById("bt5").style.display = "block";
-	btn5.style.display = "block";
+
+	
 
 
 $("#gHips").fadeOut(function(){
@@ -961,6 +964,7 @@ $("#gHips").fadeOut(function(){
 		$("#gBalley").fadeIn();
 			$("#gAss").fadeIn();
 			$("#bt5").fadeIn();
+			btn5.style.display = "block";
 
 });
 
@@ -973,11 +977,6 @@ $("#gHips").fadeOut(function(){
 var btn5 = document.getElementById("get5");
 btn5.onclick = function(){
 	btn5.style.display = "none";
-
-
-
-
-
 $("#gBalley").fadeOut();
 $("#gAss").fadeOut();
 $("#gSp").fadeOut(function(){
@@ -1066,7 +1065,9 @@ helps.onclick = function(){
 	helps.style.display = "none";
 	$("#mer1").fadeIn();
 	$("#mer2").fadeIn();
+	$("#save").fadeIn();
 };
+
 
 var btn = document.getElementById("get");
 btn.onclick = main;
@@ -1075,11 +1076,16 @@ btn.onclick = main;
 
 setTimeout(function (){
 	document.getElementById("helps").style.color = "#B1B1B1";
-}, 10000);
+}, 5000);
 
 
-
-
+var sav = document.getElementById("save");
+sav.addEventListener("click",  function(){
+var name = prompt("Вадите ваше имя");
+document.getElementById("myname").innerHTML = name.toUpperCase();
+document.getElementById("myname").style.display = "block";
+		saveImg();
+});
 
 function main(){
 data = {
