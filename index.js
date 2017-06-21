@@ -65,7 +65,7 @@ var ot = document.getElementById("Ot"),
 
 /* Функции */
 
-//пофиксить баг с дефолт-датой
+//пофиксить баг с дефолт-датой   //пофикшено
 var data;
 var co;
 
@@ -1115,6 +1115,8 @@ getFigure();
 	getAss();
 	gSp();
 	gM();
+	getRukav();
+	proyma(); 
 	basic();
 	defaultData();
 	verifyAll();
@@ -1122,23 +1124,22 @@ getFigure();
     getOsanka();
     vytachkiCount();
     razmerVytach();
-    setValueVytochki();
     getWidthSh();
     getShtanyP();
     getShtanyZ();
-    setValueShtany();
      getPol();
      getMvz();
      getZad();
      korrNaMale();
-     setValueVerh();
      getSoed();
      rasV();
-      setValueSoed();
-      getRukav();
-      proyma();
+         setValueVytochki();
+        setValueShtany();
+        setValueVerh();
+         setValueSoed();
       setValueRukav();
       noVal();
+
 
 
 };
