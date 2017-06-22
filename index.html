@@ -53,11 +53,12 @@
 
 
 </div>
-<div id="helps">Я НЕ ПОНИМАЮ</div>
-<div id="mist">ИЛИ НАЧАТЬ ЗАНОВО</div>
-<div id="myname"></div>
-<div id="save"> <a href="javascript:void(0)">Я ТАК НЕ ЗАПОМНЮ</a></div>
 
+
+
+
+
+<div id="div0" style="position: relative; height: 630px;">
 		<div id="variables" class="form-group">
 
 		<p id="pp"> ДАННЫЕ:</p>
@@ -78,7 +79,7 @@
 		</div>
 
 
-<div id="inputs2" class="form-group">
+    <div id="inputs2" class="form-group">
 	
 	<p><label for="Ot">&nbspВг(D)</label><input id="Vg" type="text" class="col-md-5" value="23"></p>
 	<p><label for="Ot">&nbspЦг(D)</label><input id="Cg" type="text" class="col-md-5"  value="17"></p>
@@ -93,88 +94,99 @@
 	<p><label for="Ot">&nbspПройма</label><input id="Pr" type="text" class="col-md-5" value="37"></p>
 	<p><label for="Ot">&nbspm-рук</label><input id="Mr" type="text" class="col-md-5" value="37"></p>
 
-	
+		  
+    </div>
+    	<div id="bt2"><button type="button" class="btn btn-secondary btn-lg" id="get2">ДАЛЕЕ</button></div>
+    	<div id="helps">Я НЕ ПОНИМАЮ</div>
+    	<div id="save"> <a href="javascript:void(0)">СОХРАНИТЬ</a></div>
+    	<div id="myname">FYYF</div>
 
 </div>
 
-		<div id="getFigure" class="form-group">
-		 <h4 style="position: relative; top: 2px; left: 26%; width: 100px; text-align: center; margin: 0 0 0 0; font-weight: bold">ФИГУРА</h4></br>
-		 <div>
-	 <label><input type="radio" name="figure"  value="normal" checked>&nbspСтандартная</br>
-	 <img style="margin: 5px 0 5px 0" src="images/normal.jpg"></img></label></div>
-	 <div>
-	 <label><input type="radio" name="figure"  value="bigj">&nbspБольшой живот</br>
-	  <img style="margin: 5px 0 5px 0" src="images/bigjivot.jpg" ></img></label></div>
-	  <div>
-	 <label><input type="radio" name="figure"  value="bigass">&nbspБольшая попа</br>
-	  <img style="margin: 5px 0 5px 0" src="images/bigpopa.jpg"></img></label>
-	  </div>
+
+<div id="div1"  style="position: relative; height: 610px; display: none">
+	<div id="getFigure" class="form-group">
+		<h4 style="position: relative; top: 2px; left: 26%; width: 100px; text-align: center; margin: 0 0 0 0; font-weight: bold">ФИГУРА</h4></br>
+		<div>
+			<label><input type="radio" name="figure"  value="normal" checked>&nbspСтандартная</br>
+			<img style="margin: 5px 0 5px 0" src="images/normal.jpg"></img></label></div>
+			<div>
+				<label><input type="radio" name="figure"  value="bigj">&nbspБольшой живот</br>
+			<img style="margin: 5px 0 5px 0" src="images/bigjivot.jpg" ></img></label></div>
+			<div>
+				<label><input type="radio" name="figure"  value="bigass">&nbspБольшая попа</br>
+			<img style="margin: 5px 0 5px 0" src="images/bigpopa.jpg"></img></label>
+		</div>
+	</div>
+	<div id="bt3"><button type="button" class="btn btn-secondary btn-lg" id="get3">ДАЛЕЕ</button></div>
+</div>
+
+
+<div id="div2"  style="position: relative; height: 630px; display: none">
+	<div id="gHips" class="form-group">
+		<h4 style="position: relative; top: -8px; left: 60%; width: 100px; text-align: center; margin: 0 0 0 0; font-weight: bold">БЕДРА</h4></br>
+		<img  src="images/vysotabeder.jpg" style="width: 230px; height:auto; margin: 5px 0 10px 0; position: relative;     top: -8px; left: 9px"></img>
+		<div style="position: relative; top: -12px; left: 8%;">
+			<label><input type="radio" name="hips" value="1.5">&nbspВысокие</br> </label>
+			<label><input type="radio" name="hips" value="2.5"  checked>&nbspСредние</br> </label>
+			<label><input type="radio" name="hips" value="3.5">&nbspНиже среднего</br> </label>
+			<label><input type="radio" name="hips" value="5">&nbspНизкие </br></label>
+		</div>
+		
+	</div>
+	<div id="bt4"><button type="button" class="btn btn-secondary btn-lg" id="get4">ДАЛЕЕ</button></div>
+</div>
+   
+
+
+<div id="div3" style="position: relative; height: 550px; display: none">
+	<div id="gSp" class="form-group">
+		<h4 style="position: relative; top: 2px; left: 13%;;width: 100px; text-align: center; margin: 0 0 0 0; font-weight: bold">ОСАНКА</h4></br>
+		<label><input type="radio" name="sp" value="sut">&nbspСутулая</br></label>
+		<label><input type="radio" name="sp" value="rovno-per"> &nbspРовно-перегибистая</br></label>
+		<label><input type="radio" name="sp" value="norm"  checked>&nbspНормальная</br></label>
+		<label><input type="radio" name="sp" value="vyslop">&nbspВысокие лопатки</br></label></div>
+		<div id="gBalley" class="form-group">
+			<h4 style="position: relative; top: 2px; left: -5%; width: 100px; text-align: center; margin: 0 0 0 0; font-weight: bold">ЖИВОТ</h4></br>
+			<label><input type="radio" name="bal" value="1.5">&nbspВысокий </label> </br>
+			<label><input type="radio" name="bal" value="2.5"  checked>&nbspСредний </label></br>
+			<label><input type="radio" name="bal" value="3.5">&nbspНиже среднего </label></br>
+			<label><input type="radio" name="bal" value="5">&nbspНизкий </label></br>
+			
+		</div>
+		<div id="gAss" class="form-group">
+			<h4 style="position: relative; top: 1px; left: -8%; width: 100px; text-align: center; margin: 0 0 0 0; font-weight: bold">ПОПА</h4></br>
+			<label><input type="radio" name="ass" value="1.5">&nbspВысокая </label> </br>
+			<label><input type="radio" name="ass" value="2.5"  checked>&nbspСредняя </label></br>
+			<label><input type="radio" name="ass" value="3.5">&nbspНиже средней </label></br>
+			<label><input type="radio" name="ass" value="5">&nbspНизкая </label></br>
+		</div>
+
+
+		<div id="bt5"><button type="button" class="btn btn-secondary btn-lg" id="get5">ДАЛЕЕ</button></div>
 	</div>
 
 
-
-<div id="gHips" class="form-group">
- <h4 style="position: relative; top: 2px; left: 60%; width: 100px; text-align: center; margin: 0 0 0 0; font-weight: bold">БЕДРА</h4></br>
-  <img  src="images/vysotabeder.jpg" style="width: 230px; height:auto; margin: 5px 0 10px 0; position: relative; top:0px; left: 9px"></img>
-
-  <div style="position: relative; top: 0px; left: 8%;">
-	  <label><input type="radio" name="hips" value="1.5">&nbspВысокие</br> </label> 
-	  <label><input type="radio" name="hips" value="2.5"  checked>&nbspСредние</br> </label>
-	  <label><input type="radio" name="hips" value="3.5">&nbspНиже среднего</br> </label>
-	  <label><input type="radio" name="hips" value="5">&nbspНизкие </br></label>
-
-</div>
-   
-		</div>
- 		
-		<div id="gSp" class="form-group">
-		Осанка</br>
-
-	 <label><input type="radio" name="sp" value="sut">Сутулая</br></label> 
-	  <label><input type="radio" name="sp" value="rovno-per"> Ровно-перегибистая</br></label>
-	  <label><input type="radio" name="sp" value="norm"  checked>Нормальная</br></label>
-	  <label><input type="radio" name="sp" value="vyslop">Высокие лопатки</br></label></div>
-
-
-		<div id="gBalley" class="form-group">
-		 <label for="sel4">Живот</label></br>
-	  <label><input type="radio" name="bal" value="1.5">Высокий </label> </br>
-	  <label><input type="radio" name="bal" value="2.5"  checked>Средний </label></br>
-	  <label><input type="radio" name="bal" value="3.5">Ниже среднего </label></br>
-	  <label><input type="radio" name="bal" value="5">Низкий </label></br>
-   
-		</div>	
-
-
-		<div id="gAss" class="form-group">
-		 <label for="sel6">Попа</label></br>
-	 <label><input type="radio" name="ass" value="1.5">Высокая </label> </br>
-	  <label><input type="radio" name="ass" value="2.5"  checked>Средняя </label></br>
-	  <label><input type="radio" name="ass" value="3.5">Ниже средней </label></br>
-	  <label><input type="radio" name="ass" value="5">Низкая </label></br>
-		</div>	
-
-
-
-		<div id="getM" class="form-group">
- <label><input type="radio" name="M">Мужчина</label></br> 
- <label><input type="radio"  name="M"  checked>Женщина</label></br> 
-	  	</div>
-<div id="mist">ИЛИ НАЧАТЬ ЗАНОВО</div>
-	  	<div id="thanks">ГОТОВО, ЗАБИРАЙ</div>
-	  	<div id="kurs"></div>
-	  	<div id="guide"><span>ЭТО ВАЖНО:</span> МЕРКИ Х И Q СНИМАЮТСЯ ЛИНЕЙКОЙ С ГОТОВЫХ ЛЕКАЛ</div>
-
+<div id="div4" style="position: relative; height: 570px; display: none">
+	<div id="getM" class="form-group">
+		<label><input type="radio" name="M">Мужчина</label></br>
+		<label><input type="radio"  name="M"  checked>Женщина</label></br>
+	</div>
 	<div id="bt"><button type="button" class="btn btn-secondary btn-lg" id="get">РАССЧИТАТЬ</button></div>
+	<div id="mist">ИЛИ НАЧАТЬ ЗАНОВО</div>
+</div>
+
+
+
+
+<div id="div5"  style="position: relative; height: 150px; display: none">
 	<div id="corr"><a id="corr2">НУЖНО ПОДКОРРЕКТИРОВАТЬ</a></div>
+	<div id="thanks">ГОТОВО, ЗАБИРАЙ</div>
+	<div id="kurs"></div>
+	<div id="guide"><span>ЭТО ВАЖНО:</span> МЕРКИ Х И Q СНИМАЮТСЯ ЛИНЕЙКОЙ С ГОТОВЫХ ЛЕКАЛ</div>
+</div>
 
-	<div id="bt2"><button type="button" class="btn btn-secondary btn-lg" id="get2">ДАЛЕЕ</button></div>
 
-		<div id="bt3"><button type="button" class="btn btn-secondary btn-lg" id="get3">ДАЛЕЕ</button></div>
-
-	<div id="bt4"><button type="button" class="btn btn-secondary btn-lg" id="get4">ДАЛЕЕ</button></div>
-
-	<div id="bt5"><button type="button" class="btn btn-secondary btn-lg" id="get5">ДАЛЕЕ</button></div>
 
 
 	<div class="black"></div>

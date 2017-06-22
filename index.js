@@ -382,7 +382,7 @@ function vytachkiCount(){
 	};
 
 	if (data.m7 <= N){
-		v1z = 0;
+		v1z =  1.5 * N;
 		v2z = 2.5 * N;
 	} else if ( data.m7 > N){
 		v1z = 1.5 * N;
@@ -870,22 +870,13 @@ var xhr = new XHR();
 }
 
 var btn = document.getElementById("get");
-
 btn.addEventListener("click",  function(){
-	btn.style.display = "none";
-	document.getElementById("mist").style.display = "none";
-	
 $( document ).ready(function (){
-
-
-	$("#getM").fadeOut(function(){
-	$("#thanks").fadeIn();
-	$("#guide").fadeIn();
-	// $("#kurs").fadeIn();
+	$("#div4").fadeOut(function(){
+	$("#div5").fadeIn();
 	$(".black").fadeIn();
 
 document.getElementById("kurs").style.display = "block";
-
 document.getElementById("shtany1").style.display = "inline-block";
 document.getElementById("shtany2").style.display = "inline-block";
 document.getElementById("vytochkii").style.display = "block";
@@ -898,9 +889,6 @@ document.getElementById("bt6").style.display = "block";
 
 
 	});
-	// document.getElementById("getM").style.display = "none";
-	// document.getElementById("thanks").style.display = "block";
-	// document.getElementById("kurs").style.display = "block";
 	 getZapros();
 	main;
 
@@ -916,98 +904,47 @@ document.getElementById("bt6").style.display = "block";
 
 var btn2 = document.getElementById("get2");
 btn2.onclick = function(){
-	btn2.style.display = "none";
-	$("#mer2").fadeOut();
 	$("#mer1").fadeOut();
-	$("#save").fadeOut();
-	$("#myname").fadeOut();
-	// document.getElementById("mer1").style.display = "none";
-	// document.getElementById("mer2").style.display = "none";
-	document.getElementById("helps").style.display = "none";
-$("#variables").fadeOut(function(){
-	$("#getFigure").fadeIn();
-		$("#bt3").fadeIn();
-	btn3.style.display = "block";
-});
-$("#inputs2").fadeOut();
+	$("#mer2").fadeOut();
+$("#div0").fadeOut(function(){
+	$("#div1").fadeIn();
+
+});};
 
 
-	// document.getElementById("variables").style.display = "none";
-	// document.getElementById("inputs2").style.display = "none";
-	// document.getElementById("getFigure").style.display = "block";
-
-
-};
 
 var btn3 = document.getElementById("get3");
 btn3.onclick = function(){
-	btn3.style.display = "none";
-$("#getFigure").fadeOut(function(){
-	$("#gHips").fadeIn();
-	$("#bt4").fadeIn();
-		btn4.style.display = "block";
-
+$("#div1").fadeOut(function(){
+	$("#div2").fadeIn();
 });
-	// document.getElementById("getFigure").style.display = "none";
-	// document.getElementById("gHips").style.display = "block";
-
 };
+
+
 var btn4 = document.getElementById("get4");
 btn4.onclick = function(){
-	btn4.style.display = "none";
+$("#div2").fadeOut(function(){
+$("#div3").fadeIn();
+});};
 
-	
 
-
-$("#gHips").fadeOut(function(){
-	$("#gSp").fadeIn();
-		$("#gBalley").fadeIn();
-			$("#gAss").fadeIn();
-			$("#bt5").fadeIn();
-			btn5.style.display = "block";
-
-});
-
-	// document.getElementById("gHips").style.display = "none";
-	// document.getElementById("gSp").style.display = "block";
-	// document.getElementById("gBalley").style.display = "block";
-	// document.getElementById("gAss").style.display = "block";
-};
 
 var btn5 = document.getElementById("get5");
 btn5.onclick = function(){
-	btn5.style.display = "none";
-$("#gBalley").fadeOut();
-$("#gAss").fadeOut();
-$("#gSp").fadeOut(function(){
-	$("#getM").fadeIn();
-	$("#mist").fadeIn();
-			$("#bt").fadeIn();
-	btn.style.display = "block";
-
-
-
+$("#div3").fadeOut(function(){
+$("#div4").fadeIn();
 });
 
-	// document.getElementById("gSp").style.display = "none";
-	// document.getElementById("gBalley").style.display = "none";
-	// document.getElementById("gAss").style.display = "none";
-	// document.getElementById("getM").style.display = "block";
+
 
 };
 
-var btn6 = document.getElementById("get6");
+var btn6 = document.getElementById("bt6");
 btn6.onclick = function(){
-	document.getElementById("thanks").style.display = "none";
-	btn2.style.display = "block";
-	document.getElementById("variables").style.display = "inline-block";
-	document.getElementById("inputs2").style.display = "inline-block";
-	document.getElementById("kurs").style.display = "none";
-	document.getElementById("corr").style.display = "none";
-	document.getElementById("helps").style.display = "block";
-	document.getElementById("guide").style.display = "none";
-
-
+	document.getElementById("div5").style.display = "none";
+		$("#save").fadeOut();
+	$("#div0").fadeIn();
+	$("#helps").fadeIn();
 
 };
 
@@ -1035,28 +972,23 @@ function noVal(){
 
 var cod = document.getElementById("corr");
 cod.onclick = function(){
-	document.getElementById("thanks").style.display = "none";
-	btn2.style.display = "block";
-	cod.style.display = "none";
-	document.getElementById("variables").style.display = "inline-block";
-	document.getElementById("inputs2").style.display = "inline-block";
-	document.getElementById("kurs").style.display = "none";
-	document.getElementById("helps").style.display = "block";
-	document.getElementById("guide").style.display = "none";
+cod.style.display = "none";
+document.getElementById("div5").style.display = "none";
+		$("#save").fadeOut();
+	$("#div0").fadeIn();
+	$("#helps").fadeIn();
 
 
 };
 
 var mistak = document.getElementById("mist");
 mistak.onclick = function(){
-	document.getElementById("getM").style.display = "none";
-	btn2.style.display = "block";
-	mistak.style.display = "none";
-	document.getElementById("variables").style.display = "inline-block";
-	document.getElementById("inputs2").style.display = "inline-block";
-	btn.style.display = "none";
-	document.getElementById("helps").style.display = "block";
+$("#div4").fadeOut(function(){
+		$("#save").fadeOut();
+	$("#div0").fadeIn();
+		$("#helps").fadeIn();
 
+});
 
 };
 

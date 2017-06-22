@@ -41,7 +41,6 @@ top: 0px;
 	position: absolute;
     top: 130px;
     left: 577px;
-	display: none;
 	color: red;
 	width: 300px;
 	height: 50px;
@@ -59,8 +58,8 @@ top: 0px;
 }
 
 #helps{
-	position: absolute;
-    top: 579px;
+	position: relative;
+    top: 123px;
     left: 45.5%;
 	display: block;
 	color: white;
@@ -73,10 +72,9 @@ top: 0px;
 
 }
 #mist{
-	position: absolute;
-    top: 296px;
+	position: relative;
+    top: 242px;
     left: 604px;
-	display: none;
 	color: #B1B1B1;
 	width: 300px;
 	height: 50px;
@@ -87,9 +85,10 @@ top: 0px;
 
 }
 #save{
-	position: absolute;
-    top: 578px;
-    left: 44.6%;
+	text-align: center;
+	position: relative;
+    top: 120px;
+    left: 38.8%;
     display: none;
 	color: white;
 	width: 300px;
@@ -108,9 +107,9 @@ top: 0px;
 
 #myname{
 	text-align: center;
-	position: absolute;
-    top: 25px;
-    left: 39%;
+	position: relative;
+    top: -444px;
+    left: 38%;
 	display: none;
 	color: #B1B1B1;
 	width: 300px;
@@ -131,10 +130,9 @@ top: 0px;
 	position: relative;
     width: 200px;
 	text-align: left;
-	margin: 20px 0 60px 70px;
-	height: 500px;
-	top: 50px;
-    left: 33%;
+	height: 400px;
+    top: 74px;
+    left: 38.5%;
 	display: inline-block;
 	color: #4B4B4B;
 
@@ -145,9 +143,10 @@ top: 0px;
 	position: relative;
 	display: inline-block;
     width: 200px;
+    height: 400px;
 	text-align: left;
-	top: 50px;
-    left: 34.2%;
+    top: 74px;
+    left: 39.2%;
 
 	color: #4B4B4B;
 
@@ -166,12 +165,14 @@ input{
 	font-family: Helvetica;
 }
 #bt{
+    position: relative;
+    top: 230px;	
+    left: 0px;
 	width: 90%;
-	display: none;
 }
 #bt2{
 	position: relative;
-    top: -50px;	
+    top: 114px;
     left: 0px;
 	width: 90%;
 	display: block;
@@ -179,24 +180,23 @@ input{
 }
 #bt3{
 	position: relative;
-    top: -40px;	
+    top: 15px;	
     left: 0px;
 	width: 90%;
-	display: none;
+
+
 }
 #bt4{
 	position: relative;
-    top: -50px;	
+    top: 24px;
     left: 0px;
 	width: 90%;
-	display: none;
 }
 #bt5{
 	position: relative;
-    top: -50px;	
+    top: -40px;
     left: 0px;
 	width: 90%;
-	display: none;
 }
 #bt6{
 	width: 90%;
@@ -206,7 +206,6 @@ height: 100px;
 #get{
 	position: relative;
 	left: 43%;
-	bottom:30px;
 	padding: 10px 100px 10px 100px;
 	font-size: 15px;
 	font-weight: bold;
@@ -305,9 +304,8 @@ input[type="text"]{
 #getFigure{
 	position: relative;
 	width: 800px;
-	display: none;
 	height: 450px;
-	top: 36px;
+	top: 88px;
     left: 30.8%;
     color: #4B4B4B;
 }
@@ -329,11 +327,9 @@ input[type="text"]{
 }
 #getM{
 	position: relative;
-	display: none;
-	width: 130px;
-	height: 180px;
-	margin: 0 0 95px 0;
-	top: 109px;
+	width: 100px;
+	height: 80px;
+	top: 215px;
     left: 642px;
     color: #4B4B4B;
 }
@@ -342,10 +338,9 @@ input[type="text"]{
 }
 #gSp{
 	position: relative;
-	display: none;
-	width: 150px;
-	left: 622px;
-    bottom: -115px;
+    width: 170px;
+    left: 608px;
+    bottom: -170px;
 	margin: 0;
 	color: #4B4B4B;
 }
@@ -355,9 +350,8 @@ input[type="text"]{
 }
 #gHips {
 	position: relative;
-	display: none;
 	width: 130px;
-	height: 600px;
+    height: 520px;
     left: 40.5%;
     top: 35px;
     color: #4B4B4B;
@@ -366,10 +360,9 @@ input[type="text"]{
 
 #gBalley {
 	position: relative;
-	display: none;
 	width: 150px;
     left: 462px;
-    bottom: 0px;
+	bottom: -23px;
     margin: 0;
     color: #4B4B4B;
 
@@ -377,10 +370,9 @@ input[type="text"]{
 
 #gAss {
 	position: relative;
-	display: none;
-	width: 130px;
-	left: 816px;
-	bottom: 109px;
+    width: 130px;
+    left: 805px;
+    bottom: 123px;
 	margin: 0;
 	color: #4B4B4B;
 }
@@ -390,7 +382,6 @@ input[type="text"]{
 #thanks{
 	position: relative;
 	text-align: center;
-	display: none;
 	width: 300px;
 	height: 50px;
 	font-size: 27px;
@@ -405,7 +396,6 @@ input[type="text"]{
 #kurs{
 	position: relative;
 	text-align: center;
-	display: none;
 	width: 200px;
 	height: 50px;
 	font-size: 19px;
@@ -419,9 +409,8 @@ input[type="text"]{
 #guide{
 	position: relative;
 	text-align: center;
-	display: none;
 	width: 550px;
-	height: 50px;
+	height: 20px;
 	font-size: 15px;
 	font-family: Helvetica;
 	font-weight: bold;
