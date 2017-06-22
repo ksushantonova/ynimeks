@@ -906,6 +906,8 @@ var btn2 = document.getElementById("get2");
 btn2.onclick = function(){
 	$("#mer1").fadeOut();
 	$("#mer2").fadeOut();
+	$("#save").fadeOut();
+	$("#myname").fadeOut();
 $("#div0").fadeOut(function(){
 	$("#div1").fadeIn();
 
@@ -1010,11 +1012,12 @@ setTimeout(function (){
 	document.getElementById("helps").style.color = "#B1B1B1";
 }, 5000);
 
+var date = new Date;
 
 var sav = document.getElementById("save");
 sav.addEventListener("click",  function(){
 var name = prompt("Вадите ваше имя");
-document.getElementById("myname").innerHTML = name.toUpperCase();
+document.getElementById("myname").innerHTML = "" + name.toUpperCase() + ", " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + "";
 document.getElementById("myname").style.display = "block";
 		saveImg();
 });
