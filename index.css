@@ -74,7 +74,7 @@ top: 0px;
 #mist{
 	position: relative;
     top: 242px;
-    left: 604px;
+    left: 597px;
 	color: #B1B1B1;
 	width: 300px;
 	height: 50px;
@@ -330,7 +330,7 @@ input[type="text"]{
 	width: 100px;
 	height: 80px;
 	top: 215px;
-    left: 642px;
+    left: 632px;
     color: #4B4B4B;
 }
 #getM p{
@@ -438,7 +438,7 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 12.5vw;
+	bottom: 12vw;
 	left: 27vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -448,7 +448,7 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 12.5vw;
+	bottom: 12vw;
 	left: 15vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -458,8 +458,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 12.5vw;
-	left: 39.7vw;
+	bottom: 12vw;
+	left:  40.3vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -468,8 +468,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 12.5vw;
-	left: 51.5vw;
+	bottom: 12vw;
+	left: 51.8vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -480,7 +480,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 38vw;
-	left: 33vw;
+    left: 33.2vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -513,7 +513,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 38vw;
-	left: 46vw;
+    left: 46.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -524,7 +524,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 38vw;
-	left: 56vw;
+    left: 57vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -556,7 +556,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 43.5vw;
-	left: 32.4vw;
+    left: 32.7vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -575,9 +575,9 @@ input[type="text"]{
 	transform: rotate(270deg);
 	text-align: center;
 	position: absolute;
-	font-size: 1.5vw;
-	bottom: 32vw;
-	left: 20.3vw;
+    font-size: 1.4vw;
+    bottom: 31vw;
+    left: 20.6vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -586,9 +586,9 @@ input[type="text"]{
 	transform: rotate(270deg);
 	text-align: center;
 	position: absolute;
-	font-size: 1.5vw;
-	bottom: 32vw;
-	left: 8.3vw;
+    font-size: 1.4vw;
+    bottom: 31vw;
+    left: 8.6vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -598,8 +598,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 32vw;
-	left: 32vw;
+    bottom: 28vw;
+    left: 32.4vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -608,9 +608,9 @@ input[type="text"]{
 	transform: rotate(270deg);
 	text-align: center;
 	position: absolute;
-	font-size: 1.5vw;
-	bottom: 32vw;
-	left: 45.5vw;
+	font-size: 1.4vw;
+    bottom: 31vw;
+    left: 46vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -621,8 +621,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 32vw;
-	left: 55.8vw;
+    bottom: 28vw;
+    left: 56.3vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -653,6 +653,7 @@ input[type="text"]{
 	position: relative;
 	display: none;
 	width: 49%;
+    top: -14px;
 	
 
 }
@@ -663,7 +664,7 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 87vw;
+    bottom: 87.3vw;
 	left: 17vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -673,7 +674,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 73.5vw;
-    left: 29.5vw;
+	left: 30vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -683,7 +684,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 63vw;
-    left: 21vw;
+    left: 20vw;
 	width: 40px;
 	margin: 0 0 0 0;
 	
@@ -710,8 +711,8 @@ input[type="text"]{
 }#kp{
 	text-align: center;
 	position: absolute;
-	font-size: 1.2vw;
-	bottom: 62.5vw;
+    font-size: 1vw;
+    bottom: 63vw;
     left: 4.4vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -720,8 +721,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 46.8vw;
-	left: 45.3vw;
+    bottom: 44.8vw;
+    left: 45.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -731,8 +732,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 62vw;
-	left: 43vw;
+    bottom: 60vw;
+    left: 43.7vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -742,8 +743,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 55.7vw;
-    left: 13.5vw;
+    bottom: 56vw;
+    left: 13.7vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -764,8 +765,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 34.7vw;
-    left: 10.3vw;
+ 	bottom: 34.4vw;
+    left: 9.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -774,8 +775,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 34.7vw;
-    left: 19vw;
+    bottom: 34.4vw;
+    left: 18.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -784,8 +785,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 4.5vw;
-    left: 10.3vw;
+	bottom: 4vw;
+    left: 9.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -794,8 +795,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 4.5vw;
-    left: 19vw;
+	bottom: 4vw;
+    left: 18.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -804,8 +805,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 18.8vw;
-	left: 43vw;
+	bottom: 18.5vw;
+	left: 43.7vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -816,11 +817,11 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 87.5vw;
+	bottom: 88vw;
     left: 27.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
-	transform: rotate(367deg);
+	transform: rotate(366deg);
 }
 
 #vsz{
@@ -828,18 +829,18 @@ input[type="text"]{
     position: absolute;
     font-size: 1.5vw;
     bottom: 78vw;
-    left: 37vw;
+    left: 37.4vw;
     width: 30px;
     margin: 0 0 0 0;
-    transform: rotate(280deg);
+    transform: rotate(275deg);
 }
 
 #vdz1{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 60.5vw;
-    left: 28vw;
+    bottom: 62.8vw;
+    left: 26vw;
 	width: 30px;
 	margin: 0 0 0 0;
 }
@@ -848,7 +849,7 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.3vw;
-    bottom: 68vw;
+    bottom: 67vw;
     left: 13vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -858,9 +859,9 @@ input[type="text"]{
 #noz{
 	text-align: center;
 	position: absolute;
-	font-size: 1.5vw;
-	bottom: 59.2vw;
-    left: 7.8vw;
+    font-size: 1.4vw;
+    bottom: 59.5vw;
+    left: 7.6vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -868,8 +869,8 @@ input[type="text"]{
 #kz{
 	text-align: center;
 	position: absolute;
-	font-size: 1.2vw;
-	bottom: 61vw;
+	font-size: 1vw;
+    bottom: 61.3vw;
     left: 2.3vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -879,8 +880,8 @@ input[type="text"]{
 #kv{
 	text-align: center;
 	position: absolute;
-	font-size: 1.2vw;
-	bottom: 73.5vw;
+    font-size: 1.1vw;
+    bottom: 73.9vw;
     left: 13.3vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -890,9 +891,9 @@ input[type="text"]{
 #tnz{
 	text-align: center;
 	position: absolute;
-	font-size: 1.5vw;
-	bottom: 46.8vw;
-	left: 51.5vw;
+	font-size: 1.3vw;
+	bottom: 44.8vw;
+    left: 52vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -903,7 +904,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 18.8vw;
-	left: 49.5vw;
+	left: 50.2vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -914,7 +915,7 @@ input[type="text"]{
 	position: absolute;
 	font-size: 1.5vw;
 	bottom: 56vw;
-    left: 20vw;
+    left: 20.3vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -923,9 +924,9 @@ input[type="text"]{
 #kzs{
 	text-align: center;
 	position: absolute;
-	font-size: 1vw;
-	bottom: 52vw;
-    left: 6vw;
+    font-size: 0.9vw;
+    bottom: 52vw;
+    left: 6.05vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	
@@ -933,8 +934,8 @@ input[type="text"]{
 #kzn{
 	text-align: center;
 	position: absolute;
-	font-size: 1.1vw;
-    bottom: 34.4vw;
+    font-size: 1vw;
+    bottom: 34.3vw;
     left: 11.2vw;
 	width: 30px;
 	margin: 0 0 0 0;
@@ -944,8 +945,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 34.4vw;
-	left: 16.5vw;
+    bottom: 34.3vw;
+    left: 16vw;
 	width: 30px;
 	margin: 0 0 0 0;
 }
@@ -953,8 +954,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 34.4vw;
-	left: 26vw;
+	bottom: 34.3vw;
+	left: 25vw;
 	width: 30px;
 	margin: 0 0 0 0;
 }
@@ -962,8 +963,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 4.5vw;
-	left: 16.5vw;
+    bottom: 4vw;
+    left: 16vw;
 	width: 30px;
 	margin: 0 0 0 0;
 }
@@ -971,8 +972,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 4.5vw;
-	left: 26vw;
+    bottom: 4vw;
+    left: 25.5vw;
 	width: 30px;
 	margin: 0 0 0 0;
 }
@@ -981,8 +982,8 @@ input[type="text"]{
 	text-align: center;
 	position: absolute;
 	font-size: 1.5vw;
-	bottom: 62vw;
-	left: 49.5vw;
+    bottom: 60vw;
+    left: 50.3vw;
 	width: 30px;
 	margin: 0 0 0 0;
 	transform: rotate(270deg);
@@ -1015,6 +1016,7 @@ input[type="text"]{
 	position: relative;
 	display: inline-block;
 	width: 38%;
+	top: 2px;
 	float: right;
 	margin-right: 110px;
 	margin-top: 55px;
@@ -1041,7 +1043,7 @@ input[type="text"]{
 }
 #a2t2{
 	bottom: 24vw;
-	left: 10.5vw;
+    left: 11vw;
 	transform: rotate(270deg);
 }
 #mvp{
@@ -1050,8 +1052,8 @@ input[type="text"]{
 }
 #vgrp{
 	bottom: 33.5vw;
-    left: 12.5vw;
-	transform: rotate(270deg);
+    left: 12.7vw;
+    transform: rotate(270deg);
 }
 #shgp{
 	bottom: 17.3vw;
@@ -1059,8 +1061,8 @@ input[type="text"]{
 }
 #a2t2np{
 	bottom: 9vw;
-	left: 10.5vw;
-	transform: rotate(270deg);
+    left: 11vw;
+    transform: rotate(270deg);
 }
 #poltnp{
 	bottom: 45.5vw;
@@ -1083,12 +1085,12 @@ input[type="text"]{
 }
 #p4{
 	bottom: 41.3vw;
-    left: 23.3vw;
+    left: 23vw;
 	transform: rotate(270deg);
 }
 #pv1{
 	bottom: 25vw;
-    left: 18vw;
+	left: 18.5vw;
     transform: rotate(297deg);
 }
 
@@ -1099,13 +1101,13 @@ input[type="text"]{
     transform: rotate(36deg);
 }
 #normanp{
-	bottom: 1vw;
-    left: 33.7vw;
+    bottom: 0.3vw;
+    left: 34vw;
 
 }
 #vbokap{
 	bottom: 12vw;
-    left: 39vw;
+    left: 39.4vw;
 	transform: rotate(270deg);
 }
 
@@ -1113,69 +1115,68 @@ input[type="text"]{
 
 #a8t8{
 	bottom: 23vw;
-	left: 30.3vw;
+	left: 30.6vw;
 	transform: rotate(270deg);
 }	
 #a9t9{
 	bottom: 23vw;
-	left: 38.4vw;
+    left: 39.2vw;
 	transform: rotate(270deg);
 }	
 
 #mvz{
-	bottom: 43.5vw;
+    bottom: 43.8vw;
     left: 33vw;
 	
 }	
 
 #mvz2{
 	bottom: 38vw;
-    left: 27.5vw;
+	left: 27.8vw;
 	transform: rotate(270deg);
 }	
 
 #mvk{
 	font-size: 1.3vw;
 	bottom: 47.5vw;
-    left: 28vw;
+    left: 28.2vw;
 	transform: rotate(270deg);
 }	
 
 #shpl{
 	bottom: 51.5vw;
-    left: 17vw;
+    left: 16.5vw;
 	
 }	
 
 #vpv{
 	font-size: 1.2vw;
-	bottom: 49vw;
-    left: 4.8vw;
+    bottom: 49.3vw;
+    left: 5vw;
 	transform: rotate(270deg);
 }
 
 #shsp{
-	bottom: 32.3vw;
+	bottom: 32vw;
     left: 18.3vw;
 	
 }	
 
 #nn{
-	bottom: 0.8vw;
+    bottom: 0.2vw;
     left: 4vw;
 }	
 
 #vbz{
 	bottom: 12vw;
-    left: -0.5vw;
+    left: -0.3vw;
 	transform: rotate(270deg);
 }	
 
 #kvz{
-	font-size: 1.2vw;
-	bottom: 23.8vw;
-    left: 6.7vw;
-	
+    font-size: 1.1vw;
+    bottom: 23.8vw;
+    left: 6.8vw;
 }	
 
 #dkv{
@@ -1187,15 +1188,15 @@ input[type="text"]{
 
 #dv{
 	bottom: 44.6vw;
-    left: 21vw;
-	transform: rotate(270deg);
+    left: 21.3vw;
+    transform: rotate(270deg);
 }	
 
 #shv{
 	font-size: 1vw;
-    bottom: 48.55vw;
-    left: 18.8vw;
-    transform: rotate(353deg);
+	bottom: 48.8vw;
+    left: 18.9vw;
+    transform: rotate(355deg);
 }	
 
 #vk{
@@ -1233,6 +1234,7 @@ input[type="text"]{
 	position: relative;
 	display: inline-block;
 	width: 38%;
+	top: 7px;
 	
 
 }
@@ -1242,36 +1244,36 @@ input[type="text"]{
 #kd1{
 	font-size: 1vw;
     bottom: 23.8vw;
-    left: 40.5vw;
+    left: 41vw;
 
 
 }
 #kn1{
-	font-size: 1.4vw;
-    bottom: 40.2vw;
-    left: 24.6vw;
+	font-size: 1.2vw;
+    bottom: 40.4vw;
+    left: 24.9vw;
 	transform: rotate(270deg);
 
 }
 #nn2{
-	font-size: 1.4vw;
-    bottom: 40vw;
-    left: 35.2vw;
+    font-size: 1.2vw;
+    bottom: 39.5vw;
+    left: 35.7vw;
 	transform: rotate(270deg);
 
 }
 #kv1{
-    bottom: 23.5vw;
-    left: 25.2vw;
+ 	bottom: 23.1vw;
+    left: 25.4vw;
 }
 #kv2{
-    bottom: 23.5vw;
-    left: 35.7vw;
+ 	bottom: 23.1vw;
+    left: 36.2vw;
 }
 #m5d2p{
 	font-size: 1.2vw;
-    bottom: 2.5vw;
-    left: 40.5vw;
+    bottom: 2.3vw;
+    left: 40.8vw;
 }
 #vbn{
     bottom: 14vw;
@@ -1282,19 +1284,19 @@ input[type="text"]{
 								/* заднее */
 
 #n1{
-	font-size: 1.4vw;
-	bottom: 44.2vw;
+    font-size: 1.2vw;
+    bottom: 44.5vw;
     left: 25.2vw;
     transform: rotate(270deg);
 }
 #n2{
     bottom: 43.2vw;
-    left: 40vw;
+    left: 40.2vw;
     transform: rotate(270deg);
 }
 #n3{
 	bottom: 43.2vw;
-    left: 52vw;
+    left: 53vw;
     transform: rotate(270deg);
 }
 #rast{
@@ -1313,21 +1315,21 @@ input[type="text"]{
 #k3{
 
     bottom: 23.5vw;
-    left: 40.5vw;
+    left: 40.8vw;
 }
 #k4{
 	font-size: 1vw;
 	bottom: 23.8vw;
-    left: 52.6vw;
+    left: 53vw;
 }
 #m5d2z{
 	font-size: 1.2vw;
-    bottom: 2.5vw;
+    bottom: 2.2vw;
     left: 18.1vw;
 }
 #vbn2{
     bottom: 14vw;
-    left: 52.5vw;
+    left: 53vw;
     transform: rotate(270deg);
 }
 					/* рукав и юбка */
@@ -1415,7 +1417,7 @@ input[type="text"]{
 #o6{
 	font-size: 1vw;
     bottom: 65.5vw;
-    left: 43vw;
+    left: 44.4vw;
  
 }
 #o7{
@@ -1432,32 +1434,32 @@ input[type="text"]{
 
 #spu{
     bottom: 48vw;
-    left: 28.5vw;
+    left: 28.3vw;
     transform: rotate(270deg);
 }
 
 #spu2{
     bottom: 20vw;
-    left: 28.5vw;
+    left: 28.9vw;
     transform: rotate(270deg);
 }
 
 #bok{
 	font-size: 1vw;
 	bottom: 35.5vw;
-    left: 10.5vw;
+    left: 10.7vw;
 }
 
 #q{
     bottom: 35.5vw;
-    left: 19.1vw;
+    left: 20.1vw;
 }
 
 
 #qk{
-    bottom: 36vw;
-    left: 36.5vw;
-    transform: rotate(355deg);
+    bottom: 36.5vw;
+    left: 38vw;
+    transform: rotate(353deg);
 }
 
 
@@ -1469,19 +1471,19 @@ input[type="text"]{
 
 #qksh{
 	font-size: 1.2vw;
-	bottom: 34.5vw;
+	bottom: 34.7vw;
     left: 46.7vw;
     transform: rotate(270deg);
 }
 
 
 #nizl{
-    bottom: 6.5vw;
+    bottom: 6.3vw;
     left: 19.5vw;
 }
 
 #nizp{
-    bottom: 6.5vw;
+    bottom: 6.3vw;
     left: 34vw;
 }
 #nizk{
@@ -1491,7 +1493,7 @@ input[type="text"]{
     transform: rotate(270deg);
 }
 #R {
-    bottom: 27.8vw;
+	bottom: 28vw;
     left: 43.7vw;
     transform: rotate(270deg);
 }

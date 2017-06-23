@@ -336,16 +336,16 @@ var os2;
 function getOsanka(){
 	if(osanka == "sut"){
 		os2 = "sut";
-		osanka = 1.5 * k;
+		osanka = 1.5 * kg;
 	} else if (osanka == "rovno-per"){
 		os2 = "rovno-per";
-		osanka = k / 2;
+		osanka = kg / 2;
 	} else if (osanka == "norm"){
 		os2 = "norm";
-		osanka = 0.75 * k;
+		osanka = 0.75 * kg;
 	} else if (osanka == "vyslop"){
 		os2 = "vyslop";
-		osanka = k;
+		osanka = kg;
 	}
 
 }
@@ -646,7 +646,7 @@ function getRukav(){
  	o5 = kr / 2;
  	o6 = 1;
  	bok = 0.5;
-    qk = "Q + " +  Math.floor((k2)*100)/100 + "";
+    qk = "Q + " +  Math.floor((kr)*100)/100 + "";
  	qkv = 2 * Nr;
  	qksh = kr;
  	nizk = kr;
